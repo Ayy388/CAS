@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* ─── CSS Variables ─── */
+:root {
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+/* ─── Base ─── */
+body {
+  background-color: #FAFAFA;
+  color: #111827;
+  font-family: 'Inter', 'PingFang SC', 'system-ui', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Card base ─── */
+.card-base {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.card-hover {
+  transition: all 0.2s ease-out;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* ─── Hero banner ─── */
+.hero-banner {
+  background: linear-gradient(135deg, #2563EB, #7C3AED);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  color: white;
+}
+
+/* ─── Brand gradient animation ─── */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-banner-animated {
+  background: linear-gradient(135deg, #2563EB, #7C3AED, #6366F1, #2563EB);
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  color: white;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cas.Phase10RemainingTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.663 s -- in com.cas.Phase10RemainingTest

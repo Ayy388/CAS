@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cas.Phase6CampaignTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.415 s -- in com.cas.Phase6CampaignTest

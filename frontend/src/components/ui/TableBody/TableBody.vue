@@ -1,0 +1,13 @@
+<script setup lang="ts">
+import { type HTMLAttributes, computed } from 'vue'
+import { cn } from '@/lib/utils'
+
+const props = defineProps<{ class?: HTMLAttributes['class'] }>()
+const classes = computed(() => cn('border-0', props.class))
+</script>
+
+<template>
+  <tbody :class="classes">
+    <slot />
+  </tbody>
+</template>

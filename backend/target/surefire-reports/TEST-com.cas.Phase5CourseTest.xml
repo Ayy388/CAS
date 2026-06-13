@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cas.Phase5CourseTest" time="0.75" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\jdk_17\bin"/>
+    <property name="sun.java.command" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778\surefirebooter-20260614004659596_3.jar C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778 2026-06-14T00-46-59_435-jvmRun1 surefire-20260614004659596_1tmp surefire_0-20260614004659596_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\方鸿达1"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="D:\jdk_17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="GBK"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778\surefirebooter-20260614004659596_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="方鸿达1"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\maven-bin\MAVEN—local repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\方鸿达1\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.11621935017969983958"/>
+    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="42060"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="GBK"/>
+    <property name="catalina.base" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.11621935017969983958"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\jdk_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\VMware\VMware Workstation\bin\;D:\Scripts\;D:\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\bandizip压缩软件\;D:\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;&quot;D:\jdk_17\bin;&quot;;D:\Python 3.12;D:\Python 3.12\Scripts;C:\Program Files\Python38;C:\Program Files\Python38\Scripts;D:\maven-bin\apache-maven-3.9.9\bin;D:\jdk_17\bin;D:\maven-bin\apache-maven-3.9.9\bin;D:\mingw32\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\nodejs\;d:\Trae CN\bin;D:\Python 3.12\Scripts\;D:\Python 3.12\;C:\Users\方鸿达1\AppData\Local\Microsoft\WindowsApps;C:\Users\方鸿达1\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\LanQiaoTest\project\PythonLanqiaoTest\driver;D:\DevEco Studio\bin;D:\Microsoft VS Code\bin;D:\IntelliJ IDEA 2024.3.1\bin;D:\cursor\resources\app\bin;C:\Users\方鸿达1\.local\bin;C:\Users\方鸿达1\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\方鸿达1\AppData\Roaming\npm;C:\Users\方鸿达1\AppData\Local\Microsoft\WinGet\Packages\Oven-sh.Bun_Microsoft.Winget.Source_8wekyb3d8bbwe\.\bun-windows-x64;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="should_return_409_when_delete_course_with_offerings" classname="com.cas.Phase5CourseTest" time="0.181">
+    <system-out><![CDATA[2026-06-14T00:47:12.710+08:00  INFO 42060 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cas.Phase5CourseTest]: Phase5CourseTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-14T00:47:12.711+08:00  INFO 42060 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cas.CasApplication for test class com.cas.Phase5CourseTest
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d670f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@727807458 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d670f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+JDBC Connection [HikariProxyConnection@1858543994 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: DEL1781369232713(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb] from current transaction
+==>  Preparing: INSERT INTO course ( code, name, type, credits, hours, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: DEL1781369232713(String), 删除测试课程(String), ELECTIVE_GENERAL(String), 2.0(BigDecimal), 32(Integer), 2026-06-14T00:47:12.802410900(LocalDateTime), 2026-06-14T00:47:12.802410900(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de26bfb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d9af7f5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@147211113 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d9af7f5]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+JDBC Connection [HikariProxyConnection@1384188325 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,code,name,type,credits,hours,description,created_at,updated_at FROM course WHERE id=?
+==> Parameters: 303(Long)
+<==    Columns: id, code, name, type, credits, hours, description, created_at, updated_at
+<==        Row: 303, DEL1781369232713, 删除测试课程, ELECTIVE_GENERAL, 2.0, 32, <<BLOB>>, 2026-06-14 00:47:13, 2026-06-14 00:47:13
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06] from current transaction
+==>  Preparing: SELECT COUNT( * ) AS total FROM course_offering WHERE (course_id = ?)
+==> Parameters: 303(Long)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06] from current transaction
+==>  Preparing: DELETE FROM course WHERE id=?
+==> Parameters: 303(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4baf7a06]
+]]></system-out>
+  </testcase>
+  <testcase name="should_create_course" classname="com.cas.Phase5CourseTest" time="0.08">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49bb8928] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@252152346 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49bb8928]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+JDBC Connection [HikariProxyConnection@2050874377 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: CS1781369232894(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7] from current transaction
+==>  Preparing: INSERT INTO course ( code, name, type, credits, hours, description, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: CS1781369232894(String), 计算机导论(String), REQUIRED(String), 3.0(BigDecimal), 48(Integer), 计算机基础课程(String), 2026-06-14T00:47:12.963844400(LocalDateTime), 2026-06-14T00:47:12.963844400(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c97f1f7]
+]]></system-out>
+  </testcase>
+  <testcase name="should_return_409_when_duplicate_code" classname="com.cas.Phase5CourseTest" time="0.153">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d790e22] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@212164180 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d790e22]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+JDBC Connection [HikariProxyConnection@2067255797 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: UNQ1781369232975(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a] from current transaction
+==>  Preparing: INSERT INTO course ( code, name, type, credits, hours, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: UNQ1781369232975(String), 唯一测试课程(String), ELECTIVE_GENERAL(String), 2.0(BigDecimal), 32(Integer), 2026-06-14T00:47:13.047370800(LocalDateTime), 2026-06-14T00:47:13.047370800(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707e895a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d62422d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1212867463 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d62422d]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6f336]
+JDBC Connection [HikariProxyConnection@200881646 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: UNQ1781369232975(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6f336]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6f336]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6f336]
+]]></system-out>
+  </testcase>
+  <testcase name="should_update_course" classname="com.cas.Phase5CourseTest" time="0.159">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41159a85] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@706472119 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41159a85]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+JDBC Connection [HikariProxyConnection@1919389583 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: UPD1781369233128(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d] from current transaction
+==>  Preparing: INSERT INTO course ( code, name, type, credits, hours, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: UPD1781369233128(String), 更新前(String), REQUIRED(String), 3.0(BigDecimal), 48(Integer), 2026-06-14T00:47:13.198121300(LocalDateTime), 2026-06-14T00:47:13.198121300(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61bfc42d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@746f9a8f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1850797736 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@746f9a8f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+JDBC Connection [HikariProxyConnection@1784194101 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,code,name,type,credits,hours,description,created_at,updated_at FROM course WHERE id=?
+==> Parameters: 306(Long)
+<==    Columns: id, code, name, type, credits, hours, description, created_at, updated_at
+<==        Row: 306, UPD1781369233128, 更新前, REQUIRED, 3.0, 48, <<BLOB>>, 2026-06-14 00:47:13, 2026-06-14 00:47:13
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e] from current transaction
+==>  Preparing: UPDATE course SET code=?, name=?, type=?, credits=?, hours=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: UPD1781369233128(String), 更新后(String), REQUIRED(String), 4.0(BigDecimal), 64(Integer), 2026-06-14T00:47:13(LocalDateTime), 2026-06-14T00:47:13.277356900(LocalDateTime), 306(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ed9ad2e]
+]]></system-out>
+  </testcase>
+  <testcase name="should_list_courses_with_keyword_filter" classname="com.cas.Phase5CourseTest" time="0.171">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ea1833] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1921859375 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ea1833]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+JDBC Connection [HikariProxyConnection@1812857581 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: KW1781369233287(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa] from current transaction
+==>  Preparing: INSERT INTO course ( code, name, type, credits, hours, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: KW1781369233287(String), 关键字搜索测试课程(String), ELECTIVE_MAJOR(String), 2.0(BigDecimal), 32(Integer), 2026-06-14T00:47:13.357570800(LocalDateTime), 2026-06-14T00:47:13.357570800(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ccc5fa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b2db6af] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1582347766 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b2db6af]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dbc5ef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1387451087 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM course WHERE ((name LIKE ? OR code LIKE ?))
+==> Parameters: %关键字%(String), %关键字%(String)
+<==    Columns: total
+<==        Row: 14
+<==      Total: 1
+==>  Preparing: SELECT id,code,name,type,credits,hours,description,created_at,updated_at FROM course WHERE ((name LIKE ? OR code LIKE ?)) ORDER BY created_at DESC LIMIT ?
+==> Parameters: %关键字%(String), %关键字%(String), 20(Long)
+<==    Columns: id, code, name, type, credits, hours, description, created_at, updated_at
+<==        Row: 307, KW1781369233287, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-14 00:47:13, 2026-06-14 00:47:13
+<==        Row: 290, KW1781367477007, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-14 00:17:57, 2026-06-14 00:17:57
+<==        Row: 272, KW1781361273692, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-13 22:34:34, 2026-06-13 22:34:34
+<==        Row: 255, KW1781351355953, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-13 19:49:16, 2026-06-13 19:49:16
+<==        Row: 227, KW1781350871403, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-13 19:41:11, 2026-06-13 19:41:11
+<==        Row: 211, KW1781350741780, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-13 19:39:02, 2026-06-13 19:39:02
+<==        Row: 195, KW1781350701507, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-13 19:38:22, 2026-06-13 19:38:22
+<==        Row: 170, KW1781198434792, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 01:20:35, 2026-06-12 01:20:35
+<==        Row: 152, KW1781196552788, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 00:49:13, 2026-06-12 00:49:13
+<==        Row: 135, KW1781196298886, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 00:44:59, 2026-06-12 00:44:59
+<==        Row: 107, KW1781195660799, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 00:34:21, 2026-06-12 00:34:21
+<==        Row: 90, KW1781195626798, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 00:33:47, 2026-06-12 00:33:47
+<==        Row: 73, KW1781194809252, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-12 00:20:09, 2026-06-12 00:20:09
+<==        Row: 5, KW001, 关键字搜索测试课程, ELECTIVE_MAJOR, 2.0, 32, <<BLOB>>, 2026-06-11 23:51:26, 2026-06-11 23:51:26
+<==      Total: 14
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dbc5ef]
+]]></system-out>
+  </testcase>
+</testsuite>

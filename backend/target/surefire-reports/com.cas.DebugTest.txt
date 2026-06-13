@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.cas.DebugTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.245 s <<< FAILURE! -- in com.cas.DebugTest
+com.cas.DebugTest.debug_api -- Time elapsed: 1.178 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because the return value of "java.util.Map.get(Object)" is null
+	at com.cas.DebugTest.debug_api(DebugTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

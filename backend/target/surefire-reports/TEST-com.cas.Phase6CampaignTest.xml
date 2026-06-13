@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cas.Phase6CampaignTest" time="1.415" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\jdk_17\bin"/>
+    <property name="sun.java.command" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778\surefirebooter-20260614004659596_3.jar C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778 2026-06-14T00-46-59_435-jvmRun1 surefire-20260614004659596_1tmp surefire_0-20260614004659596_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\方鸿达1"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="D:\jdk_17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="GBK"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire7271799619386776778\surefirebooter-20260614004659596_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="方鸿达1"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\maven-bin\MAVEN—local repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\方鸿达1\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.11621935017969983958"/>
+    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="42060"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="GBK"/>
+    <property name="catalina.base" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.11621935017969983958"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\jdk_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\VMware\VMware Workstation\bin\;D:\Scripts\;D:\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\bandizip压缩软件\;D:\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;&quot;D:\jdk_17\bin;&quot;;D:\Python 3.12;D:\Python 3.12\Scripts;C:\Program Files\Python38;C:\Program Files\Python38\Scripts;D:\maven-bin\apache-maven-3.9.9\bin;D:\jdk_17\bin;D:\maven-bin\apache-maven-3.9.9\bin;D:\mingw32\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\nodejs\;d:\Trae CN\bin;D:\Python 3.12\Scripts\;D:\Python 3.12\;C:\Users\方鸿达1\AppData\Local\Microsoft\WindowsApps;C:\Users\方鸿达1\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\LanQiaoTest\project\PythonLanqiaoTest\driver;D:\DevEco Studio\bin;D:\Microsoft VS Code\bin;D:\IntelliJ IDEA 2024.3.1\bin;D:\cursor\resources\app\bin;C:\Users\方鸿达1\.local\bin;C:\Users\方鸿达1\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\方鸿达1\AppData\Roaming\npm;C:\Users\方鸿达1\AppData\Local\Microsoft\WinGet\Packages\Oven-sh.Bun_Microsoft.Winget.Source_8wekyb3d8bbwe\.\bun-windows-x64;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="should_start_campaign" classname="com.cas.Phase6CampaignTest" time="0.252">
+    <system-out><![CDATA[2026-06-14T00:47:13.460+08:00  INFO 42060 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cas.Phase6CampaignTest]: Phase6CampaignTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-14T00:47:13.460+08:00  INFO 42060 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cas.CasApplication for test class com.cas.Phase6CampaignTest
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@753221d6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1258190455 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@753221d6]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d1f8345]
+JDBC Connection [HikariProxyConnection@1878238405 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试学期-活动(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-14T00:47:13.531162700(LocalDateTime), 2026-06-14T00:47:13.531162700(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d1f8345]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d1f8345]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d1f8345]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d1f8345]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b329a38] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@907993705 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b329a38]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+JDBC Connection [HikariProxyConnection@1822191233 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 439(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b] from current transaction
+==>  Preparing: INSERT INTO selection_campaign ( name, semester_id, start_time, end_time, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试选课活动-启动(String), 439(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), PENDING(String), 2026-06-14T00:47:13.619476500(LocalDateTime), 2026-06-14T00:47:13.619476500(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 439(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 439, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1751559b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fce620] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@240103314 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fce620]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+JDBC Connection [HikariProxyConnection@1440688398 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 213(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 213, 测试选课活动-启动, 439, 2025-09-01 09:00:00, 2025-09-05 17:00:00, PENDING, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60] from current transaction
+==>  Preparing: UPDATE selection_campaign SET name=?, semester_id=?, start_time=?, end_time=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 测试选课活动-启动(String), 439(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), ACTIVE(String), 2026-06-14T00:47:14(LocalDateTime), 2026-06-14T00:47:13.700767700(LocalDateTime), 213(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 439(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 439, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a879a60]
+]]></system-out>
+  </testcase>
+  <testcase name="should_return_409_when_duplicate_active_campaign_in_semester" classname="com.cas.Phase6CampaignTest" time="0.224">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ea8364c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1496617002 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ea8364c]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55c7815f]
+JDBC Connection [HikariProxyConnection@58323758 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试学期-活动(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-14T00:47:13.785069700(LocalDateTime), 2026-06-14T00:47:13.785069700(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55c7815f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55c7815f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55c7815f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55c7815f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5963a3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1007102601 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5963a3]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+JDBC Connection [HikariProxyConnection@752612414 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 440(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a] from current transaction
+==>  Preparing: INSERT INTO selection_campaign ( name, semester_id, start_time, end_time, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 重复活动测试(String), 440(Long), 2025-10-01T09:00(LocalDateTime), 2025-10-05T17:00(LocalDateTime), PENDING(String), 2026-06-14T00:47:13.860691900(LocalDateTime), 2026-06-14T00:47:13.860691900(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 440(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 440, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16cd252a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eeb5c1f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1781788805 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eeb5c1f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eb39b57]
+JDBC Connection [HikariProxyConnection@1954437244 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 440(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eb39b57]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eb39b57]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eb39b57]
+]]></system-out>
+  </testcase>
+  <testcase name="should_create_campaign_with_PENDING_status" classname="com.cas.Phase6CampaignTest" time="0.151">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63d3ea96] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@754929550 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63d3ea96]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df19f67]
+JDBC Connection [HikariProxyConnection@2120942411 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试学期-活动(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-14T00:47:14.007571600(LocalDateTime), 2026-06-14T00:47:14.007571600(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df19f67]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df19f67]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df19f67]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4df19f67]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a711398] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1809656080 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a711398]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+JDBC Connection [HikariProxyConnection@1933841921 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 441(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec] from current transaction
+==>  Preparing: INSERT INTO selection_campaign ( name, semester_id, start_time, end_time, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试选课活动-创建(String), 441(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), PENDING(String), 2026-06-14T00:47:14.083197400(LocalDateTime), 2026-06-14T00:47:14.083197400(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 441(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 441, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@565d34ec]
+]]></system-out>
+  </testcase>
+  <testcase name="should_list_campaigns_with_pagination" classname="com.cas.Phase6CampaignTest" time="0.092">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a5be4dd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1701749132 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a5be4dd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47c40440] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@727870992 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM selection_campaign
+==> Parameters: 
+<==    Columns: total
+<==        Row: 14
+<==      Total: 1
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign ORDER BY created_at DESC LIMIT ?
+==> Parameters: 20(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 213, 测试选课活动-启动, 439, 2025-09-01 09:00:00, 2025-09-05 17:00:00, ACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==        Row: 214, 重复活动测试, 440, 2025-10-01 09:00:00, 2025-10-05 17:00:00, PENDING, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==        Row: 215, 测试选课活动-创建, 441, 2025-09-01 09:00:00, 2025-09-05 17:00:00, PENDING, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==        Row: 212, 审核测试活动, 432, 2026-06-13 23:18:07, 2026-06-14 01:18:07, ENDED, 2026-06-14 00:18:07, 2026-06-14 00:18:32
+<==        Row: 199, E2E??????, 411, 2026-06-13 22:54:40, 2026-06-14 00:53:40, ENDED, 2026-06-13 22:53:41, 2026-06-13 23:06:04
+<==        Row: 148, E2E-Test-Campaign, 291, 2026-06-13 10:00:00, 2026-06-30 23:59:59, ENDED, 2026-06-13 13:28:19, 2026-06-13 19:48:18
+<==        Row: 147, V, 289, 2026-06-12 12:48:50, 2026-06-12 14:49:50, ENDED, 2026-06-12 12:49:51, 2026-06-12 12:49:52
+<==        Row: 146, Final, 288, 2026-06-12 12:44:12, 2026-06-12 14:45:12, ENDED, 2026-06-12 12:45:12, 2026-06-12 12:45:14
+<==        Row: 145, MQF, 287, 2026-06-12 01:32:58, 2026-06-12 03:33:58, ENDED, 2026-06-12 01:33:59, 2026-06-12 01:34:00
+<==        Row: 144, MQT, 286, 2026-06-12 01:32:20, 2026-06-12 03:33:20, ENDED, 2026-06-12 01:33:21, 2026-06-12 03:33:48
+<==        Row: 143, MQTEST, 285, 2026-06-12 01:31:46, 2026-06-12 03:32:46, ENDED, 2026-06-12 01:32:47, 2026-06-12 01:32:48
+<==        Row: 142, E2E2, 284, 2026-06-12 01:26:10, 2026-06-12 03:27:10, ENDED, 2026-06-12 01:27:10, 2026-06-12 01:27:11
+<==        Row: 128, E2E-Campaign, 261, 2026-06-12 01:00:24, 2026-06-12 03:01:24, ENDED, 2026-06-12 01:01:25, 2026-06-12 01:03:36
+<==        Row: 12, 调试活动, 67, 2025-09-01 09:00:00, 2025-09-05 17:00:00, ENDED, 2026-06-12 00:06:13, 2026-06-12 00:10:07
+<==      Total: 14
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47c40440]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d7f8c5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@840887842 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 439(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 439, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d7f8c5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@643a557a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1014204648 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 440(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 440, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@643a557a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66d4919e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1349753275 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 441(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 441, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66d4919e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@417a13fd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@56631853 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 432(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 432, 审核测试学期, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:18:07, 2026-06-14 00:18:09
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@417a13fd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c2980b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@364287637 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 411(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 411, 2025-2026????, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-13 22:53:19, 2026-06-14 00:17:56
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c2980b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e63d702] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1592855557 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 291(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 291, E2E-Test-Semester, 2026-2027, FIRST, 2026-09-01, 2027-01-31, INACTIVE, 2026-06-12 16:58:39, 2026-06-13 19:38:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e63d702]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d71451] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@366743598 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 289(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 289, V, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 12:49:51, 2026-06-12 17:01:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d71451]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d7c8d0c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1349808494 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 288(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 288, Fin, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 12:45:12, 2026-06-13 13:28:19
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d7c8d0c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b64f326] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1916341675 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 287(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 287, MQF, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 01:33:58, 2026-06-12 12:45:12
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b64f326]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@461fb6bd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1526632603 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 286(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 286, MQT, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 01:33:21, 2026-06-12 01:33:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@461fb6bd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee73a5e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1970722657 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 285(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 285, MQTest, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 01:32:47, 2026-06-12 01:33:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee73a5e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f87fb18] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1212482428 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 284(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 284, E2E2, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 01:27:10, 2026-06-12 01:32:47
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f87fb18]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47fdf8b4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1201837160 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 261(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 261, E2E-Semester, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 01:00:58, 2026-06-12 01:20:34
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47fdf8b4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7442e072] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1557302806 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 67(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 67, 调试学期, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 00:06:13, 2026-06-12 00:10:08
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7442e072]
+]]></system-out>
+  </testcase>
+  <testcase name="should_return_409_when_start_non_pending_campaign" classname="com.cas.Phase6CampaignTest" time="0.382">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@174e712f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@641424414 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@174e712f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79864a1a]
+JDBC Connection [HikariProxyConnection@657884219 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试学期-活动(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-14T00:47:14.253504800(LocalDateTime), 2026-06-14T00:47:14.253504800(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79864a1a]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79864a1a]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79864a1a]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79864a1a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39891224] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1842789038 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39891224]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+JDBC Connection [HikariProxyConnection@383992310 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 442(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d] from current transaction
+==>  Preparing: INSERT INTO selection_campaign ( name, semester_id, start_time, end_time, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试-已结束活动(String), 442(Long), 2025-08-01T09:00(LocalDateTime), 2025-08-05T17:00(LocalDateTime), PENDING(String), 2026-06-14T00:47:14.330184400(LocalDateTime), 2026-06-14T00:47:14.330184400(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 442(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 442, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a08362d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13815bb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2109986896 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13815bb]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+JDBC Connection [HikariProxyConnection@1676154214 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 216(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 216, 测试-已结束活动, 442, 2025-08-01 09:00:00, 2025-08-05 17:00:00, PENDING, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df] from current transaction
+==>  Preparing: UPDATE selection_campaign SET name=?, semester_id=?, start_time=?, end_time=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 测试-已结束活动(String), 442(Long), 2025-08-01T09:00(LocalDateTime), 2025-08-05T17:00(LocalDateTime), ACTIVE(String), 2026-06-14T00:47:14(LocalDateTime), 2026-06-14T00:47:14.411281(LocalDateTime), 216(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 442(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 442, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eba21df]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664acf45] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1688600007 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664acf45]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+JDBC Connection [HikariProxyConnection@1217012167 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 216(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 216, 测试-已结束活动, 442, 2025-08-01 09:00:00, 2025-08-05 17:00:00, ACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4] from current transaction
+==>  Preparing: UPDATE selection_campaign SET name=?, semester_id=?, start_time=?, end_time=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 测试-已结束活动(String), 442(Long), 2025-08-01T09:00(LocalDateTime), 2025-08-05T17:00(LocalDateTime), ENDED(String), 2026-06-14T00:47:14(LocalDateTime), 2026-06-14T00:47:14.487934600(LocalDateTime), 216(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 442(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 442, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b034d4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@721db23] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@315206166 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@721db23]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@639f10c]
+JDBC Connection [HikariProxyConnection@1418377246 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 216(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 216, 测试-已结束活动, 442, 2025-08-01 09:00:00, 2025-08-05 17:00:00, ENDED, 2026-06-14 00:47:14, 2026-06-14 00:47:14
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@639f10c]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@639f10c]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@639f10c]
+]]></system-out>
+  </testcase>
+  <testcase name="should_end_campaign" classname="com.cas.Phase6CampaignTest" time="0.307">
+    <system-out><![CDATA[Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a0876a2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1043047365 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a0876a2]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dbdbcae]
+JDBC Connection [HikariProxyConnection@10582406 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试学期-活动(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-14T00:47:14.637282200(LocalDateTime), 2026-06-14T00:47:14.637282200(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dbdbcae]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dbdbcae]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dbdbcae]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dbdbcae]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70c8518f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@27354496 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70c8518f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+JDBC Connection [HikariProxyConnection@1530687904 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM selection_campaign WHERE (semester_id = ? AND status IN (?,?))
+==> Parameters: 443(Long), PENDING(String), ACTIVE(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83] from current transaction
+==>  Preparing: INSERT INTO selection_campaign ( name, semester_id, start_time, end_time, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 测试选课活动-结束(String), 443(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), PENDING(String), 2026-06-14T00:47:14.714285200(LocalDateTime), 2026-06-14T00:47:14.714285200(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 443(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 443, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:15, 2026-06-14 00:47:15
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4419c83]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b9de84] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@409836997 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b9de84]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+JDBC Connection [HikariProxyConnection@1432215132 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 217(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 217, 测试选课活动-结束, 443, 2025-09-01 09:00:00, 2025-09-05 17:00:00, PENDING, 2026-06-14 00:47:15, 2026-06-14 00:47:15
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f] from current transaction
+==>  Preparing: UPDATE selection_campaign SET name=?, semester_id=?, start_time=?, end_time=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 测试选课活动-结束(String), 443(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), ACTIVE(String), 2026-06-14T00:47:15(LocalDateTime), 2026-06-14T00:47:14.791905400(LocalDateTime), 217(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 443(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 443, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:15, 2026-06-14 00:47:15
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6473c30f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@171812e2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@655939491 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@171812e2]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+JDBC Connection [HikariProxyConnection@917675046 wrapping com.mysql.cj.jdbc.ConnectionImpl@1e9d721] will be managed by Spring
+==>  Preparing: SELECT id,name,semester_id,start_time,end_time,status,created_at,updated_at FROM selection_campaign WHERE id=?
+==> Parameters: 217(Long)
+<==    Columns: id, name, semester_id, start_time, end_time, status, created_at, updated_at
+<==        Row: 217, 测试选课活动-结束, 443, 2025-09-01 09:00:00, 2025-09-05 17:00:00, ACTIVE, 2026-06-14 00:47:15, 2026-06-14 00:47:15
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70] from current transaction
+==>  Preparing: UPDATE selection_campaign SET name=?, semester_id=?, start_time=?, end_time=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 测试选课活动-结束(String), 443(Long), 2025-09-01T09:00(LocalDateTime), 2025-09-05T17:00(LocalDateTime), ENDED(String), 2026-06-14T00:47:15(LocalDateTime), 2026-06-14T00:47:14.864383400(LocalDateTime), 217(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70] from current transaction
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 443(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 443, 测试学期-活动, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-14 00:47:15, 2026-06-14 00:47:15
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f9ffa70]
+]]></system-out>
+  </testcase>
+</testsuite>

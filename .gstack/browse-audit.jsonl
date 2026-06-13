@@ -1,0 +1,26 @@
+{"ts":"2026-06-13T14:19:41.387Z","cmd":"goto","args":"http://localhost:5173/login","origin":"http://localhost:5173/login","durationMs":413,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:19:48.413Z","cmd":"snapshot","args":"-i","origin":"http://localhost:5173/login","durationMs":48,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:19:54.860Z","cmd":"fill","args":"@e1 admin","origin":"http://localhost:5173/login","durationMs":38,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:19:54.983Z","cmd":"fill","args":"@e2 admin123","origin":"http://localhost:5173/login","durationMs":21,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:19:55.171Z","cmd":"click","args":"@e3","origin":"http://localhost:5173/login","durationMs":70,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:20:04.209Z","cmd":"text","args":"","origin":"http://localhost:5173/admin/dashboard","durationMs":4,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:20:18.740Z","cmd":"goto","args":"http://localhost:5173/admin/campaigns","origin":"http://localhost:5173/admin/campaigns","durationMs":29,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:20:32.574Z","cmd":"text","args":"","origin":"http://localhost:5173/admin/campaigns","durationMs":3,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:20:42.528Z","cmd":"goto","args":"http://localhost:5173/admin/review","origin":"http://localhost:5173/admin/review","durationMs":24,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:20:52.518Z","cmd":"text","args":"","origin":"http://localhost:5173/admin/review","durationMs":2,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:21:04.653Z","cmd":"snapshot","args":"-a -o C:/Users/方鸿达1/AppData/Local/Temp/admin-campaigns.png","origin":"http://localhost:5173/admin/review","durationMs":3685,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T14:22:33.291Z","cmd":"screenshot","args":"C:/Users/方鸿达1/AppData/Local/Temp/admin-review-page.png","origin":"http://localhost:5173/admin/review","durationMs":125,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:12:38.840Z","cmd":"goto","args":"http://localhost:5173/login","origin":"http://localhost:5173/login","durationMs":451,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:12:39.009Z","cmd":"fill","args":"@e1 admin","origin":"http://localhost:5173/login","durationMs":1,"status":"error","hasCookies":false,"mode":"launched","error":"Ref @e1 not found. Run 'snapshot' to get fresh refs."}
+{"ts":"2026-06-13T15:12:39.119Z","cmd":"fill","args":"@e2 admin123","origin":"http://localhost:5173/login","durationMs":0,"status":"error","hasCookies":false,"mode":"launched","error":"Ref @e2 not found. Run 'snapshot' to get fresh refs."}
+{"ts":"2026-06-13T15:12:39.223Z","cmd":"click","args":"@e3","origin":"http://localhost:5173/login","durationMs":1,"status":"error","hasCookies":false,"mode":"launched","error":"Ref @e3 not found. Run 'snapshot' to get fresh refs."}
+{"ts":"2026-06-13T15:12:41.423Z","cmd":"url","args":"","origin":"http://localhost:5173/login","durationMs":1,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:12:59.281Z","cmd":"goto","args":"http://localhost:5173/login","origin":"http://localhost:5173/login","durationMs":31,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:12:59.429Z","cmd":"snapshot","args":"-i","origin":"http://localhost:5173/login","durationMs":40,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:13:10.436Z","cmd":"fill","args":"@e1 admin","origin":"http://localhost:5173/login","durationMs":29,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:13:10.543Z","cmd":"fill","args":"@e2 admin123","origin":"http://localhost:5173/login","durationMs":9,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:13:10.691Z","cmd":"click","args":"@e3","origin":"http://localhost:5173/login","durationMs":48,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:13:12.830Z","cmd":"url","args":"","origin":"http://localhost:5173/admin/dashboard","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:13:52.840Z","cmd":"screenshot","args":"C:/Users/方鸿达1/AppData/Local/Temp/admin-dashboard.png","origin":"http://localhost:5173/admin/dashboard","durationMs":102,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:14:25.041Z","cmd":"text","args":"","origin":"http://localhost:5173/admin/dashboard","durationMs":5,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-13T15:14:58.511Z","cmd":"goto","args":"http://localhost:5173/admin/review","origin":"http://localhost:5173/admin/review","durationMs":340,"status":"ok","hasCookies":false,"mode":"launched"}

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cas.DebugTest" time="8.245" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\jdk_17\bin"/>
+    <property name="sun.java.command" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire17587327909427528779\surefirebooter-20260612000959241_3.jar C:\Users\方鸿达1\AppData\Local\Temp\surefire17587327909427528779 2026-06-12T00-09-59_011-jvmRun1 surefire-20260612000959241_1tmp surefire_0-20260612000959241_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\project_reopsitory\CAS\backend\target\test-classes;D:\project_reopsitory\CAS\backend\target\classes;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\maven-bin\MAVEN—local repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\maven-bin\MAVEN—local repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\maven-bin\MAVEN—local repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\maven-bin\MAVEN—local repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\maven-bin\MAVEN—local repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\maven-bin\MAVEN—local repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\maven-bin\MAVEN—local repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\maven-bin\MAVEN—local repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\maven-bin\MAVEN—local repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-amqp\3.2.5\spring-boot-starter-amqp-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-messaging\6.1.6\spring-messaging-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-rabbit\3.1.4\spring-rabbit-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\amqp\spring-amqp\3.1.4\spring-amqp-3.1.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\retry\spring-retry\2.0.5\spring-retry-2.0.5.jar;D:\maven-bin\MAVEN—local repository\com\rabbitmq\amqp-client\5.19.0\amqp-client-5.19.0.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot3-starter\3.5.7\mybatis-plus-spring-boot3-starter-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus\3.5.7\mybatis-plus-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-core\3.5.7\mybatis-plus-core-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-annotation\3.5.7\mybatis-plus-annotation-3.5.7.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-extension\3.5.7\mybatis-plus-extension-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis\3.5.16\mybatis-3.5.16.jar;D:\maven-bin\MAVEN—local repository\com\github\jsqlparser\jsqlparser\4.9\jsqlparser-4.9.jar;D:\maven-bin\MAVEN—local repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\maven-bin\MAVEN—local repository\com\baomidou\mybatis-plus-spring-boot-autoconfigure\3.5.7\mybatis-plus-spring-boot-autoconfigure-3.5.7.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\maven-bin\MAVEN—local repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-core\9.22.3\flyway-core-9.22.3.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.4\jackson-dataformat-toml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\maven-bin\MAVEN—local repository\org\flywaydb\flyway-mysql\9.22.3\flyway-mysql-9.22.3.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;D:\maven-bin\MAVEN—local repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;D:\maven-bin\MAVEN—local repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;D:\maven-bin\MAVEN—local repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;D:\maven-bin\MAVEN—local repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;D:\maven-bin\MAVEN—local repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\maven-bin\MAVEN—local repository\cn\hutool\hutool-all\5.8.29\hutool-all-5.8.29.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;D:\maven-bin\MAVEN—local repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;D:\maven-bin\MAVEN—local repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;D:\maven-bin\MAVEN—local repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;D:\maven-bin\MAVEN—local repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;D:\maven-bin\MAVEN—local repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;D:\maven-bin\MAVEN—local repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;D:\maven-bin\MAVEN—local repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\maven-bin\MAVEN—local repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\maven-bin\MAVEN—local repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\maven-bin\MAVEN—local repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\maven-bin\MAVEN—local repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\maven-bin\MAVEN—local repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\maven-bin\MAVEN—local repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\maven-bin\MAVEN—local repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\maven-bin\MAVEN—local repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\maven-bin\MAVEN—local repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\maven-bin\MAVEN—local repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\maven-bin\MAVEN—local repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\maven-bin\MAVEN—local repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\maven-bin\MAVEN—local repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\maven-bin\MAVEN—local repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\maven-bin\MAVEN—local repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\maven-bin\MAVEN—local repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\maven-bin\MAVEN—local repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="test" value="DebugTest#debug_api"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\方鸿达1"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="D:\jdk_17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="GBK"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\方鸿达1\AppData\Local\Temp\surefire17587327909427528779\surefirebooter-20260612000959241_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="方鸿达1"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\maven-bin\MAVEN—local repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\方鸿达1\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.12763516064581432939"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="D:\project_reopsitory\CAS\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="73448"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="GBK"/>
+    <property name="catalina.base" value="C:\Users\方鸿达1\AppData\Local\Temp\tomcat.0.12763516064581432939"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\jdk_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\VMware\VMware Workstation\bin\;D:\Scripts\;D:\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\bandizip压缩软件\;D:\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;&quot;D:\jdk_17\bin;&quot;;D:\nodejs\;D:\Python 3.12;D:\Python 3.12\Scripts;C:\Program Files\Python38;C:\Program Files\Python38\Scripts;D:\maven-bin\apache-maven-3.9.9\bin;D:\jdk_17\bin;D:\maven-bin\apache-maven-3.9.9\bin;D:\mingw32\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;d:\Trae CN\bin;D:\Python 3.12\Scripts\;D:\Python 3.12\;C:\Users\方鸿达1\AppData\Local\Microsoft\WindowsApps;C:\Users\方鸿达1\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\LanQiaoTest\project\PythonLanqiaoTest\driver;D:\DevEco Studio\bin;C:\Users\方鸿达1\AppData\Roaming\npm;D:\Microsoft VS Code\bin;D:\IntelliJ IDEA 2024.3.1\bin;D:\cursor\resources\app\bin;C:\Users\方鸿达1\.local\bin;C:\Users\方鸿达1\AppData\Local\Programs\DockerDesktop\resources\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="debug_api" classname="com.cas.DebugTest" time="1.178">
+    <error message="Cannot invoke &quot;java.util.Map.get(Object)&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because the return value of "java.util.Map.get(Object)" is null
+	at com.cas.DebugTest.debug_api(DebugTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+    <system-out><![CDATA[00:09:59.916 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.cas.DebugTest]: DebugTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:10:00.098 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.cas.CasApplication for test class com.cas.DebugTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-06-12T00:10:00.477+08:00  INFO 73448 --- [           main] com.cas.DebugTest                        : Starting DebugTest using Java 17.0.9 with PID 73448 (started by 方鸿达1 in D:\project_reopsitory\CAS\backend)
+2026-06-12T00:10:00.478+08:00  INFO 73448 --- [           main] com.cas.DebugTest                        : No active profile set, falling back to 1 default profile: "default"
+2026-06-12T00:10:01.705+08:00  INFO 73448 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-12T00:10:01.708+08:00  INFO 73448 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-12T00:10:01.746+08:00  INFO 73448 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2026-06-12T00:10:02.582+08:00  INFO 73448 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-06-12T00:10:02.591+08:00  INFO 73448 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-12T00:10:02.591+08:00  INFO 73448 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-12T00:10:02.658+08:00  INFO 73448 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-12T00:10:02.659+08:00  INFO 73448 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2160 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.28.48.1 network interface 
+Get network interface info: name:eth6 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:7 workerId:5
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-06-12T00:10:03.707+08:00  INFO 73448 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-12T00:10:04.241+08:00  INFO 73448 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3700994c
+2026-06-12T00:10:04.243+08:00  INFO 73448 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-12T00:10:04.398+08:00  INFO 73448 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-12T00:10:04.398+08:00  INFO 73448 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-12T00:10:04.398+08:00  INFO 73448 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-12T00:10:04.460+08:00  INFO 73448 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/cas (MySQL 8.0)
+2026-06-12T00:10:04.539+08:00  INFO 73448 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.044s)
+2026-06-12T00:10:04.560+08:00  INFO 73448 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `cas`: 2
+2026-06-12T00:10:04.564+08:00  INFO 73448 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `cas` is up to date. No migration necessary.
+2026-06-12T00:10:05.948+08:00  INFO 73448 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4af50246, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45482f82, org.springframework.security.web.context.SecurityContextHolderFilter@7891742e, org.springframework.security.web.header.HeaderWriterFilter@19bbb216, org.springframework.web.filter.CorsFilter@3460e4ed, org.springframework.security.web.authentication.logout.LogoutFilter@1f3dafd4, com.cas.auth.JwtAuthenticationFilter@61b8c9de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@781bd9dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cc42abe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23eb6d13, org.springframework.security.web.session.SessionManagementFilter@5ead245, org.springframework.security.web.access.ExceptionTranslationFilter@3976910, org.springframework.security.web.access.intercept.AuthorizationFilter@1802f60c]
+2026-06-12T00:10:06.681+08:00  INFO 73448 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 62517 (http) with context path ''
+2026-06-12T00:10:06.684+08:00  INFO 73448 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.712+08:00  INFO 73448 --- [           main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2026-06-12T00:10:06.725+08:00  INFO 73448 --- [ntContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.743+08:00 ERROR 73448 --- [ntContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:727) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1478) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.19.0.jar:5.19.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	... 12 common frames omitted
+
+2026-06-12T00:10:06.750+08:00  INFO 73448 --- [ntContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.790+08:00  INFO 73448 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.806+08:00  INFO 73448 --- [           main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2026-06-12T00:10:06.810+08:00  INFO 73448 --- [ntContainer#1-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.812+08:00 ERROR 73448 --- [ntContainer#1-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:727) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2202) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1960) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1924) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1478) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1320) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.19.0.jar:5.19.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584) ~[spring-rabbit-3.1.4.jar:3.1.4]
+	... 12 common frames omitted
+
+2026-06-12T00:10:06.813+08:00  INFO 73448 --- [ntContainer#1-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-12T00:10:06.850+08:00  INFO 73448 --- [           main] com.cas.DebugTest                        : Started DebugTest in 6.612 seconds (process running for 7.495)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a345a1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@480007613 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will not be managed by Spring
+==>  Preparing: UPDATE selection_campaign SET status=?, updated_at=? WHERE (status = ? AND start_time <= ?)
+==> Parameters: ACTIVE(String), 2026-06-12T00:10:06.858132700(LocalDateTime), PENDING(String), 2026-06-12T00:10:06.858132700(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a345a1]
+2026-06-12T00:10:07.016+08:00  INFO 73448 --- [   scheduling-1] com.cas.scheduler.CampaignScheduler      : Scheduler: 1 campaign(s) PENDING → ACTIVE
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35047c9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@450167581 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will not be managed by Spring
+==>  Preparing: UPDATE selection_campaign SET status=?, updated_at=? WHERE (status = ? AND end_time <= ?)
+==> Parameters: ENDED(String), 2026-06-12T00:10:06.858132700(LocalDateTime), ACTIVE(String), 2026-06-12T00:10:06.858132700(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35047c9]
+2026-06-12T00:10:07.024+08:00  INFO 73448 --- [   scheduling-1] com.cas.scheduler.CampaignScheduler      : Scheduler: 1 campaign(s) ACTIVE → ENDED
+2026-06-12T00:10:07.342+08:00 ERROR 73448 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1795) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1726) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1528) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1508) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1469) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1505) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1191) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:997) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:195) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:383) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:363) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.doWithKeys(RedisTemplate.java:775) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.core.RedisTemplate.delete(RedisTemplate.java:578) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at com.cas.scheduler.CampaignScheduler.autoUpdateCampaignStatus(CampaignScheduler.java:54) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.6.jar:6.1.6]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.12.5.jar:1.12.5]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.6.jar:6.1.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:104) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1724) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	... 29 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:215) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$getConnection$0(LettucePoolingConnectionProvider.java:93) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:71) ~[commons-pool2-2.12.0.jar:2.12.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:566) ~[commons-pool2-2.12.0.jar:2.12.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:306) ~[commons-pool2-2.12.0.jar:2.12.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:233) ~[commons-pool2-2.12.0.jar:2.12.0]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-6.3.2.RELEASE.jar:6.3.2.RELEASE/8941aea]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:99) ~[spring-data-redis-3.2.5.jar:3.2.5]
+	... 30 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2026-06-12T00:10:07.653+08:00  INFO 73448 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-12T00:10:07.653+08:00  INFO 73448 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-12T00:10:07.654+08:00  INFO 73448 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d66b63c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@619709244 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,real_name,role,student_id,department,major,grade,email,phone,avatar_url,status,created_at,updated_at FROM sys_user WHERE (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, real_name, role, student_id, department, major, grade, email, phone, avatar_url, status, created_at, updated_at
+<==        Row: 1, admin, $2a$10$rFM116gu1rpNKmDODWIOsOoNbN1ihao.5eLRT/e90pHMi0HrlCG2e, 系统管理员, ADMIN, null, null, null, null, null, null, null, 1, 2026-06-11 23:42:45, 2026-06-11 23:42:45
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d66b63c]
+=== LOGIN RESPONSE ===
+Status: 200 OK
+Body: {code=200, message=success, data={token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImp0aSI6ImI1ODZiYjY3LTE5ZTQtNGQxZi05NjZhLTBkMTc3YzM4MjEzZiIsImlhdCI6MTc4MTE5NDIwNywiZXhwIjoxNzgxMjgwNjA3fQ.wsuNSv8CnmKq2SP849BU6h7zs-eT-GQtAx7wBCeGrHM, user={id=1, username=admin, realName=系统管理员, role=ADMIN, department=null, major=null, grade=null}}}
+Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImp0aSI6ImI1ODZiYjY3LTE5ZTQtNGQxZi05NjZhLTBkMTc3YzM4MjEzZiIsImlhdCI6MTc4MTE5NDIwNywiZXhwIjoxNzgxMjgwNjA3fQ.wsuNSv8CnmKq2SP849BU6h7zs-eT-GQtAx7wBCeGrHM
+2026-06-12T00:10:07.935+08:00  WARN 73448 --- [o-auto-1-exec-2] com.cas.auth.JwtAuthenticationFilter     : Redis is unavailable, skipping blacklist check
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f19a99f]
+JDBC Connection [HikariProxyConnection@409236890 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will be managed by Spring
+==>  Preparing: INSERT INTO semester ( name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 调试学期(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), INACTIVE(String), 2026-06-12T00:10:07.956391900(LocalDateTime), 2026-06-12T00:10:07.956391900(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f19a99f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f19a99f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f19a99f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f19a99f]
+=== CREATE SEMESTER ===
+Status: 200 OK
+Body: {code=200, message=success, data={id=68, name=调试学期, academicYear=2025-2026, semesterType=FIRST, startDate=2025-09-01, endDate=2026-01-15, status=INACTIVE}}
+Semester ID: 68
+2026-06-12T00:10:07.978+08:00  WARN 73448 --- [o-auto-1-exec-3] com.cas.auth.JwtAuthenticationFilter     : Redis is unavailable, skipping blacklist check
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+JDBC Connection [HikariProxyConnection@1408010574 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will be managed by Spring
+==>  Preparing: SELECT id,name,academic_year,semester_type,start_date,end_date,status,created_at,updated_at FROM semester WHERE id=?
+==> Parameters: 68(Long)
+<==    Columns: id, name, academic_year, semester_type, start_date, end_date, status, created_at, updated_at
+<==        Row: 68, 调试学期, 2025-2026, FIRST, 2025-09-01, 2026-01-15, INACTIVE, 2026-06-12 00:10:08, 2026-06-12 00:10:08
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282] from current transaction
+==>  Preparing: UPDATE semester SET status=?, updated_at=? WHERE (status = ?)
+==> Parameters: INACTIVE(String), 2026-06-12T00:10:07.985898200(LocalDateTime), ACTIVE(String)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282] from current transaction
+==>  Preparing: UPDATE semester SET name=?, academic_year=?, semester_type=?, start_date=?, end_date=?, status=?, created_at=?, updated_at=? WHERE id=?
+==> Parameters: 调试学期(String), 2025-2026(String), FIRST(String), 2025-09-01(LocalDate), 2026-01-15(LocalDate), ACTIVE(String), 2026-06-12T00:10:08(LocalDateTime), 2026-06-12T00:10:07.988898700(LocalDateTime), 68(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49c93282]
+=== ACTIVATE SEMESTER ===
+Status: 200 OK
+Body: {code=200, message=success, data={id=68, name=调试学期, academicYear=2025-2026, semesterType=FIRST, startDate=2025-09-01, endDate=2026-01-15, status=ACTIVE}}
+2026-06-12T00:10:08.004+08:00  WARN 73448 --- [o-auto-1-exec-4] com.cas.auth.JwtAuthenticationFilter     : Redis is unavailable, skipping blacklist check
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@233f8ce1]
+JDBC Connection [HikariProxyConnection@1318491355 wrapping com.mysql.cj.jdbc.ConnectionImpl@3700994c] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM course WHERE (code = ?)
+==> Parameters: DBG001(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@233f8ce1]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@233f8ce1]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@233f8ce1]
+=== CREATE COURSE ===
+Status: 200 OK
+Body: {code=409, message=课程编号已存在, data=null}
+]]></system-out>
+  </testcase>
+</testsuite>
