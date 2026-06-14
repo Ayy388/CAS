@@ -71,7 +71,7 @@ onUnmounted(() => {
             {{ formatCountdown(campaign.timeRemaining) }}
           </span>
         </div>
-        <Button class="bg-white text-[#2563EB] hover:bg-white/90" @click="goToCourses">
+        <Button class="bg-white text-[#0D9488] hover:bg-white/90" @click="goToCourses">
           <BookOpen class="mr-2 h-4 w-4" />
           进入课程大厅
           <ArrowRight class="ml-1 h-4 w-4" />
@@ -81,15 +81,15 @@ onUnmounted(() => {
 
     <!-- My Courses -->
     <div>
-      <h2 class="mb-4 text-xl font-semibold text-[#111827]">我的课程</h2>
+      <h2 class="mb-4 text-xl font-semibold text-[#1A1A2E]">我的课程</h2>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Card v-if="!loading" class="card-hover cursor-pointer" @click="router.push('/student/my-courses')">
           <CardContent class="flex flex-col items-center justify-center py-12 text-center">
-            <BookOpen class="mb-3 h-10 w-10 text-[#2563EB]/40" />
+            <BookOpen class="mb-3 h-10 w-10 text-[#0D9488]/30" />
             <p class="text-sm font-medium text-[#6B7280]">查看已选课程</p>
           </CardContent>
         </Card>
-        <Skeleton v-else class="h-40 rounded-xl" />
+        <Skeleton v-else class="h-40 rounded-2xl" />
       </div>
     </div>
   </div>

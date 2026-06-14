@@ -60,7 +60,7 @@ function viewDetail(id: number) {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">课程大厅</h1>
+      <h1 class="text-2xl font-bold text-[#1A1A2E]">课程大厅</h1>
       <p class="mt-1 text-sm text-[#6B7280]">浏览可选课程，选择你感兴趣的课程</p>
     </div>
 
@@ -75,7 +75,7 @@ function viewDetail(id: number) {
 
     <!-- Course Grid -->
     <div v-if="loading" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <Skeleton v-for="i in 6" :key="i" class="h-48 rounded-xl" />
+      <Skeleton v-for="i in 6" :key="i" class="h-48 rounded-2xl" />
     </div>
 
     <EmptyState
@@ -93,7 +93,7 @@ function viewDetail(id: number) {
       >
         <CardContent class="p-5">
           <div class="mb-3 flex items-start justify-between">
-            <h3 class="text-base font-semibold text-[#111827]">{{ course.courseName }}</h3>
+            <h3 class="text-base font-semibold text-[#1A1A2E]">{{ course.courseName }}</h3>
             <Badge :variant="course.seatsRemaining > 0 ? 'default' : 'destructive'">
               {{ course.seatsRemaining > 0 ? '可报名' : '已满员' }}
             </Badge>
@@ -101,7 +101,7 @@ function viewDetail(id: number) {
           <div class="mb-3 space-y-1 text-sm text-[#6B7280]">
             <p>{{ COURSE_TYPE_MAP[course.courseType] }} · {{ course.teacherName }} · {{ course.credits }}学分 · {{ course.hours }}课时</p>
           </div>
-          <div class="flex items-center justify-between border-t border-[#E5E7EB] pt-3 text-sm">
+          <div class="flex items-center justify-between pt-3 text-sm">
             <div class="flex items-center gap-1 text-[#6B7280]">
               <Users class="h-4 w-4" />
               <span>剩余 {{ course.seatsRemaining }}/{{ course.maxCapacity }} 名额</span>

@@ -48,7 +48,7 @@ onMounted(loadData)
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">数据看板</h1>
+      <h1 class="text-2xl font-bold text-[#1A1A2E]">数据看板</h1>
       <p class="mt-1 text-sm text-[#6B7280]">系统运营数据概览</p>
     </div>
 
@@ -68,7 +68,7 @@ onMounted(loadData)
       <!-- Top Courses -->
       <Card>
         <CardContent class="p-5">
-          <h3 class="mb-4 text-base font-semibold text-[#111827]">热门课程 TOP10</h3>
+          <h3 class="mb-4 text-base font-semibold text-[#1A1A2E]">热门课程 TOP10</h3>
           <Skeleton v-if="loading" class="h-72 w-full rounded-xl" />
           <BarChart v-else :data="topCourses" />
         </CardContent>
@@ -77,7 +77,7 @@ onMounted(loadData)
       <!-- Trend -->
       <Card>
         <CardContent class="p-5">
-          <h3 class="mb-4 text-base font-semibold text-[#111827]">抢课趋势</h3>
+          <h3 class="mb-4 text-base font-semibold text-[#1A1A2E]">抢课趋势</h3>
           <Skeleton v-if="loading" class="h-72 w-full rounded-xl" />
           <LineChart v-else :data="trend" />
         </CardContent>

@@ -25,17 +25,17 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <Card class="card-hover cursor-pointer" @click="emit('viewDetail', offering.id)">
+  <Card class="card-hover cursor-pointer overflow-hidden" @click="emit('viewDetail', offering.id)">
     <CardContent class="p-5">
       <!-- Header -->
-      <div class="mb-3 flex items-start justify-between">
-        <h3 class="text-base font-semibold text-[#111827]">{{ offering.courseName }}</h3>
+      <div class="mb-3 flex items-start justify-between gap-2">
+        <h3 class="text-base font-semibold text-[#1A1A2E]">{{ offering.courseName }}</h3>
         <StatusBadge v-if="hasEnrolled" status="ENROLLED" type="enrollment" />
         <Badge v-else-if="offering.seatsRemaining <= 0" variant="destructive">已满员</Badge>
       </div>
 
       <!-- Info -->
-      <div class="mb-3 space-y-1 text-sm text-[#6B7280]">
+      <div class="mb-4 space-y-1 text-sm text-[#6B7280]">
         <p>
           {{ COURSE_TYPE_MAP[offering.courseType] }} ·
           {{ offering.teacherName }} ·
@@ -46,9 +46,9 @@ const emit = defineEmits<{
       </div>
 
       <!-- Footer -->
-      <div class="flex items-center justify-between border-t border-[#E5E7EB] pt-3">
-        <div class="flex items-center gap-1 text-sm text-[#6B7280]">
-          <Users class="h-4 w-4" />
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-1.5 text-sm text-[#6B7280]">
+          <Users class="h-3.5 w-3.5" />
           <span>剩余 {{ offering.seatsRemaining }}/{{ offering.maxCapacity }}</span>
         </div>
         <Button

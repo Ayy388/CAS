@@ -48,7 +48,7 @@ async function handleMarkRead(id: number) {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">通知中心</h1>
+      <h1 class="text-2xl font-bold text-[#1A1A2E]">通知中心</h1>
       <p class="mt-1 text-sm text-[#6B7280]">查看选课审核结果和系统通知</p>
     </div>
 
