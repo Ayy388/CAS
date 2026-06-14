@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/Card'
 import { CardContent } from '@/components/ui/CardContent'
 import { Separator } from '@/components/ui/Separator'
 import { Skeleton } from '@/components/ui/Skeleton'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import StatusBadge from '@/components/shared/StatusBadge.vue'
 import { ArrowLeft } from 'lucide-vue-next'
 import type { CourseOffering } from '@/types'
@@ -23,8 +24,11 @@ const loading = ref(true)
 const offering = ref<CourseOffering | null>(null)
 const hasEnrolled = ref(false)
 const enrolling = ref(false)
+const error = ref(false)
 
-onMounted(async () => {
+async function loadData() {
+  error.value = false
+  loading.value = true
   const id = Number(route.params.id)
   if (!id) {
     loading.value = false
@@ -38,11 +42,14 @@ onMounted(async () => {
     offering.value = detail
     hasEnrolled.value = enrollments.items.some(e => e.offeringId === id)
   } catch {
+    error.value = true
     toast?.('error', '加载课程详情失败')
   } finally {
     loading.value = false
   }
-})
+}
+
+onMounted(loadData)
 
 async function handleEnroll() {
   if (!offering.value) return
@@ -67,6 +74,8 @@ async function handleEnroll() {
     </button>
 
     <Skeleton v-if="loading" class="h-64 w-full rounded-2xl" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <div v-else-if="offering" class="grid gap-8 lg:grid-cols-3">
       <!-- Left: Course Details -->
@@ -145,7 +154,7 @@ async function handleEnroll() {
       </div>
     </div>
 
-    <div v-else class="py-16 text-center text-sm text-[#6B7280]">
+    <div v-else-if="!offering && !error" class="py-16 text-center text-sm text-[#6B7280]">
       课程不存在
     </div>
   </div>

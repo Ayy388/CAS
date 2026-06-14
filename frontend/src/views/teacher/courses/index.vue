@@ -6,6 +6,7 @@ import { CardContent } from '@/components/ui/CardContent'
 import { Button } from '@/components/ui/Button'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import StatusBadge from '@/components/shared/StatusBadge.vue'
 import { teacherService } from '@/services/teacher'
 import type { TeacherCourseItem } from '@/types'
@@ -15,18 +16,24 @@ const toast = inject<(type: 'success' | 'error', title: string) => void>('toast'
 
 const router = useRouter()
 const loading = ref(true)
+const error = ref(false)
 const courses = ref<TeacherCourseItem[]>([])
 
-onMounted(async () => {
+async function loadData() {
+  loading.value = true
+  error.value = false
   try {
     const res = await teacherService.listCourses()
     courses.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载课程列表失败')
   } finally {
     loading.value = false
   }
-})
+}
+
+onMounted(loadData)
 </script>
 
 <template>
@@ -37,6 +44,8 @@ onMounted(async () => {
     </div>
 
     <Skeleton v-if="loading" variant="card" :count="4" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="courses.length === 0"

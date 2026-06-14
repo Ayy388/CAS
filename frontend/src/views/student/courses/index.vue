@@ -9,6 +9,7 @@ import { Tabs } from '@/components/ui/Tabs'
 import { Badge } from '@/components/ui/Badge'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import { offeringService } from '@/services/offering'
 import { Search, Users } from 'lucide-vue-next'
 import { COURSE_TYPE_MAP } from '@/types'
@@ -22,6 +23,7 @@ const searchQuery = ref('')
 const typeFilter = ref('all')
 const loading = ref(true)
 const courses = ref<CourseOffering[]>([])
+const error = ref(false)
 
 const courseTypes = [
   { label: '全部', value: 'all' },
@@ -41,20 +43,25 @@ const filteredCourses = computed(() => {
   })
 })
 
-onMounted(async () => {
+function viewDetail(id: number) {
+  router.push(`/student/courses/${id}`)
+}
+
+async function loadData() {
+  error.value = false
+  loading.value = true
   try {
     const res = await offeringService.studentList()
     courses.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载课程列表失败')
   } finally {
     loading.value = false
   }
-})
-
-function viewDetail(id: number) {
-  router.push(`/student/courses/${id}`)
 }
+
+onMounted(loadData)
 </script>
 
 <template>
@@ -77,6 +84,8 @@ function viewDetail(id: number) {
     <div v-if="loading" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <Skeleton v-for="i in 6" :key="i" class="h-48 rounded-2xl" />
     </div>
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="filteredCourses.length === 0"

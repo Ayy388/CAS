@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Dialog } from '@/components/ui/Dialog'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import { reviewService } from '@/services/review'
 import type { ReviewItem } from '@/types'
 import { Check, X } from 'lucide-vue-next'
@@ -15,6 +16,7 @@ import { Check, X } from 'lucide-vue-next'
 const toast = inject<(type: 'success' | 'error', title: string) => void>('toast')
 
 const loading = ref(true)
+const error = ref(false)
 const items = ref<ReviewItem[]>([])
 const showDialog = ref(false)
 const dialogAction = ref<'approve' | 'reject'>('approve')
@@ -24,10 +26,12 @@ const dialogDesc = ref('')
 
 async function loadData() {
   loading.value = true
+  error.value = false
   try {
     const res = await reviewService.list()
     items.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载审核列表失败')
     items.value = []
   } finally {
@@ -79,6 +83,8 @@ async function confirmAction() {
     </div>
 
     <Skeleton v-if="loading" variant="table" :count="5" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="items.length === 0"

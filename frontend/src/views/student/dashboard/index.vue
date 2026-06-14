@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { CardContent } from '@/components/ui/CardContent'
 import { Skeleton } from '@/components/ui/Skeleton'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import { ArrowRight, Clock, BookOpen } from 'lucide-vue-next'
 
 const toast = inject<(type: 'success' | 'error', title: string) => void>('toast')
@@ -19,6 +20,7 @@ const campaign = useCampaignStore()
 useCurrentCampaign()
 
 const loading = ref(true)
+const error = ref(false)
 const semesterName = ref('')
 
 function formatCountdown(seconds: number): string {
@@ -37,16 +39,21 @@ function goToCourses() {
   router.push('/student/courses')
 }
 
-onMounted(async () => {
+async function loadData() {
+  error.value = false
+  loading.value = true
   try {
     const data = await studentService.getDashboard()
     semesterName.value = data.semester?.name ?? '未知学期'
   } catch {
+    error.value = true
     toast?.('error', '加载首页数据失败')
   } finally {
     loading.value = false
   }
-})
+}
+
+onMounted(loadData)
 
 onUnmounted(() => {
   campaign.stopCountdown()
@@ -82,14 +89,17 @@ onUnmounted(() => {
     <!-- My Courses -->
     <div>
       <h2 class="mb-4 text-xl font-semibold text-[#1A1A2E]">我的课程</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <Card v-if="!loading" class="card-hover cursor-pointer" @click="router.push('/student/my-courses')">
+      <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Skeleton class="h-40 rounded-2xl" />
+      </div>
+      <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
+      <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Card class="card-hover cursor-pointer" @click="router.push('/student/my-courses')">
           <CardContent class="flex flex-col items-center justify-center py-12 text-center">
             <BookOpen class="mb-3 h-10 w-10 text-[#0D9488]/30" />
             <p class="text-sm font-medium text-[#6B7280]">查看已选课程</p>
           </CardContent>
         </Card>
-        <Skeleton v-else class="h-40 rounded-2xl" />
       </div>
     </div>
   </div>

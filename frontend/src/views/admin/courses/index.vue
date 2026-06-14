@@ -10,6 +10,7 @@ import { Dialog } from '@/components/ui/Dialog'
 import { Badge } from '@/components/ui/Badge'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import CourseForm from '@/components/forms/CourseForm.vue'
 import { courseService } from '@/services/course'
 import type { Course } from '@/types'
@@ -19,6 +20,7 @@ import { Plus, Search, Pencil, Trash2 } from 'lucide-vue-next'
 const toast = inject<(type: 'success' | 'error', title: string) => void>('toast')
 
 const loading = ref(true)
+const error = ref(false)
 const courses = ref<Course[]>([])
 const searchQuery = ref('')
 const showSheet = ref(false)
@@ -28,11 +30,13 @@ const deletingItem = ref<Course | null>(null)
 
 async function loadData() {
   loading.value = true
+  error.value = false
   try {
     const kw = searchQuery.value || undefined
     const res = await courseService.list(kw)
     courses.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载课程列表失败')
     courses.value = []
   } finally {
@@ -94,6 +98,8 @@ async function handleDeleteConfirm() {
     </div>
 
     <Skeleton v-if="loading" variant="table" :count="5" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="courses.length === 0"

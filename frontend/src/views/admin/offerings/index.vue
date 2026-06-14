@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Sheet } from '@/components/ui/Sheet'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import OfferingForm from '@/components/forms/OfferingForm.vue'
 import { courseService } from '@/services/course'
 import { offeringService } from '@/services/offering'
@@ -19,6 +20,7 @@ import { Plus } from 'lucide-vue-next'
 const toast = inject<(type: 'success' | 'error', title: string) => void>('toast')
 
 const loading = ref(true)
+const error = ref(false)
 const courses = ref<Course[]>([])
 const allOfferings = ref<CourseOffering[]>([])
 const selectedCourse = ref<Course | null>(null)
@@ -31,6 +33,7 @@ const filteredOfferings = computed(() => {
 
 async function loadData() {
   loading.value = true
+  error.value = false
   try {
     const [courseRes, offeringRes] = await Promise.all([
       courseService.list(),
@@ -42,6 +45,7 @@ async function loadData() {
       selectedCourse.value = courseRes.items[0]
     }
   } catch {
+    error.value = true
     toast?.('error', '加载开课数据失败')
   } finally {
     loading.value = false
@@ -76,6 +80,7 @@ function handleCreate() {
         </CardHeader>
         <CardContent class="p-0">
           <Skeleton v-if="loading" variant="table" :count="5" />
+          <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
           <EmptyState
             v-else-if="courses.length === 0"
             title="暂无课程"

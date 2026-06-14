@@ -3,6 +3,7 @@ import { ref, inject, watch } from 'vue'
 import { Tabs } from '@/components/ui/Tabs'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import NotificationItem from '@/components/shared/NotificationItem.vue'
 import { notificationService } from '@/services/notification'
 import type { Notification } from '@/types'
@@ -12,6 +13,7 @@ const toast = inject<(type: 'success' | 'error', title: string) => void>('toast'
 const loading = ref(true)
 const typeFilter = ref('all')
 const notifications = ref<Notification[]>([])
+const error = ref(false)
 
 const filterTabs = [
   { label: '全部', value: 'all' },
@@ -21,11 +23,13 @@ const filterTabs = [
 ]
 
 async function loadData() {
+  error.value = false
   loading.value = true
   try {
     const res = await notificationService.list(typeFilter.value !== 'all' ? typeFilter.value : undefined)
     notifications.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载通知失败')
   } finally {
     loading.value = false
@@ -55,6 +59,8 @@ async function handleMarkRead(id: number) {
     <Tabs v-model="typeFilter" :tabs="filterTabs" />
 
     <Skeleton v-if="loading" variant="card" :count="4" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="notifications.length === 0"

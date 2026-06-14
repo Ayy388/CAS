@@ -9,6 +9,7 @@ import { Sheet } from '@/components/ui/Sheet'
 import { Dialog } from '@/components/ui/Dialog'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import SemesterForm from '@/components/forms/SemesterForm.vue'
 import { semesterService } from '@/services/semester'
 import type { Semester } from '@/types'
@@ -17,6 +18,7 @@ import { Plus, Power, Pencil, Trash2 } from 'lucide-vue-next'
 const toast = inject<(type: 'success' | 'error', title: string) => void>('toast')
 
 const loading = ref(true)
+const error = ref(false)
 const semesters = ref<Semester[]>([])
 const showSheet = ref(false)
 const editItem = ref<Semester | null>(null)
@@ -25,10 +27,12 @@ const deletingItem = ref<Semester | null>(null)
 
 async function loadData() {
   loading.value = true
+  error.value = false
   try {
     const res = await semesterService.list()
     semesters.value = res.items
   } catch {
+    error.value = true
     semesters.value = []
   } finally {
     loading.value = false
@@ -90,6 +94,8 @@ async function handleDeleteConfirm() {
     </div>
 
     <Skeleton v-if="loading" variant="table" :count="5" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="semesters.length === 0"

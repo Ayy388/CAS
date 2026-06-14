@@ -7,6 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Button } from '@/components/ui/Button'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import { teacherService } from '@/services/teacher'
 import type { StudentListItem } from '@/types'
 import { ArrowLeft, Download } from 'lucide-vue-next'
@@ -16,21 +17,27 @@ const toast = inject<(type: 'success' | 'error', title: string) => void>('toast'
 const router = useRouter()
 const route = useRoute()
 const loading = ref(true)
+const error = ref(false)
 const students = ref<StudentListItem[]>([])
 const courseName = ref('')
 
-onMounted(async () => {
+async function loadData() {
   const offeringId = Number(route.params.id)
   if (!offeringId) { loading.value = false; return }
+  loading.value = true
+  error.value = false
   try {
     const res = await teacherService.listStudents(offeringId)
     students.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载学生列表失败')
   } finally {
     loading.value = false
   }
-})
+}
+
+onMounted(loadData)
 
 function handleExport() {
   const offeringId = Number(route.params.id)
@@ -58,6 +65,8 @@ function handleExport() {
     </div>
 
     <Skeleton v-if="loading" variant="table" :count="8" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="students.length === 0"

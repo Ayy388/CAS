@@ -4,8 +4,10 @@ import { useRouter } from 'vue-router'
 import { Card } from '@/components/ui/Card'
 import { CardContent } from '@/components/ui/CardContent'
 import { Button } from '@/components/ui/Button'
+import { Dialog } from '@/components/ui/Dialog'
 import { Skeleton } from '@/components/ui/Skeleton'
 import EmptyState from '@/components/shared/EmptyState.vue'
+import ErrorState from '@/components/shared/ErrorState.vue'
 import StatusBadge from '@/components/shared/StatusBadge.vue'
 import { enrollmentService } from '@/services/enrollment'
 import { useCampaignStore } from '@/stores/campaign'
@@ -19,33 +21,46 @@ const campaign = useCampaignStore()
 
 const loading = ref(true)
 const enrollments = ref<Enrollment[]>([])
-const droppingId = ref<number | null>(null)
+const error = ref(false)
+const showDropDialog = ref(false)
+const droppingEnrollment = ref<Enrollment | null>(null)
 
-onMounted(async () => {
+async function loadData() {
+  error.value = false
+  loading.value = true
   try {
     const res = await enrollmentService.myEnrollments()
     enrollments.value = res.items
   } catch {
+    error.value = true
     toast?.('error', '加载课程列表失败')
   } finally {
     loading.value = false
   }
-})
+}
 
-async function handleDrop(enrollmentId: number) {
+onMounted(loadData)
+
+function handleDropClick(enrollment: Enrollment) {
   if (campaign.currentCampaign?.status === 'ENDED') {
     toast?.('error', '当前已超过退课时间')
     return
   }
-  droppingId.value = enrollmentId
+  droppingEnrollment.value = enrollment
+  showDropDialog.value = true
+}
+
+async function handleDropConfirm() {
+  if (!droppingEnrollment.value) return
+  showDropDialog.value = false
   try {
-    await enrollmentService.drop(enrollmentId)
+    await enrollmentService.drop(droppingEnrollment.value.id)
     toast?.('success', '退课成功')
-    enrollments.value = enrollments.value.filter(e => e.id !== enrollmentId)
+    enrollments.value = enrollments.value.filter(e => e.id !== droppingEnrollment.value!.id)
   } catch {
     toast?.('error', '退课失败，请重试')
   } finally {
-    droppingId.value = null
+    droppingEnrollment.value = null
   }
 }
 </script>
@@ -58,6 +73,8 @@ async function handleDrop(enrollmentId: number) {
     </div>
 
     <Skeleton v-if="loading" variant="card" :count="3" />
+
+    <ErrorState v-else-if="error" message="加载失败，请重试" :on-retry="loadData" />
 
     <EmptyState
       v-else-if="enrollments.length === 0"
@@ -95,15 +112,22 @@ async function handleDrop(enrollmentId: number) {
               variant="outline"
               size="sm"
               class="text-[#EF4444]"
-              :disabled="droppingId === e.id || campaign.currentCampaign?.status === 'ENDED'"
-              @click="handleDrop(e.id)"
+              :disabled="droppingEnrollment?.id === e.id || campaign.currentCampaign?.status === 'ENDED'"
+              @click="handleDropClick(e)"
             >
               <Trash2 class="h-4 w-4" />
-              {{ droppingId === e.id ? '退课中...' : '退课' }}
+              {{ droppingEnrollment?.id === e.id ? '退课中...' : '退课' }}
             </Button>
           </div>
         </CardContent>
       </Card>
     </div>
+
+    <Dialog v-model:open="showDropDialog" title="确认退课" :description="`确定要退掉「${droppingEnrollment?.offeringName || ''}」吗？`">
+      <div class="flex justify-end gap-3">
+        <Button variant="outline" @click="showDropDialog = false">取消</Button>
+        <Button variant="destructive" @click="handleDropConfirm">确认退课</Button>
+      </div>
+    </Dialog>
   </div>
 </template>
