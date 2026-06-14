@@ -54,7 +54,7 @@ onMounted(loadData)
     />
 
     <div v-else class="grid gap-6 sm:grid-cols-2">
-      <Card v-for="c in courses" :key="c.id" class="card-hover overflow-hidden">
+      <Card v-for="(c, index) in courses" :key="c.id" class="stagger-item card-hover overflow-hidden" :style="{ 'animation-delay': `${index * 0.05}s` }">
         <CardContent class="p-5">
           <div class="mb-3 flex items-start justify-between">
             <h3 class="text-base font-semibold text-[#1A1A2E]">{{ c.courseName }}</h3>

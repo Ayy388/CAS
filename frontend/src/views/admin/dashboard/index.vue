@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, inject } from 'vue'
+import { ref, computed, onMounted, inject } from 'vue'
 import { Card } from '@/components/ui/Card'
 import { CardContent } from '@/components/ui/CardContent'
 import { Skeleton } from '@/components/ui/Skeleton'
@@ -23,6 +23,13 @@ const stats = ref<DashboardStats>({
 
 const topCourses = ref<TopCourse[]>([])
 const trend = ref<TrendPoint[]>([])
+
+const kpiItems = computed(() => [
+  { key: 'totalCourses' as const, label: '总课程数', icon: BookOpen },
+  { key: 'totalTeachers' as const, label: '总教师数', icon: Users },
+  { key: 'totalStudents' as const, label: '总学生数', icon: GraduationCap },
+  { key: 'totalEnrollments' as const, label: '总报名人数', icon: FileCheck },
+])
 
 async function loadData() {
   loading.value = true
@@ -56,10 +63,9 @@ onMounted(loadData)
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <Skeleton v-if="loading" v-for="i in 4" :key="i" class="h-32 rounded-xl" />
       <template v-else>
-        <KPIStatCard label="总课程数" :value="stats.totalCourses" :icon="BookOpen" />
-        <KPIStatCard label="总教师数" :value="stats.totalTeachers" :icon="Users" />
-        <KPIStatCard label="总学生数" :value="stats.totalStudents" :icon="GraduationCap" />
-        <KPIStatCard label="总报名人数" :value="stats.totalEnrollments" :icon="FileCheck" />
+        <div v-for="(stat, index) in kpiItems" :key="index" class="stagger-item" :style="{ 'animation-delay': `${index * 0.08}s` }">
+          <KPIStatCard :label="stat.label" :value="stats[stat.key]" :icon="stat.icon" />
+        </div>
       </template>
     </div>
 

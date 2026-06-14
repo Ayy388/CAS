@@ -84,7 +84,7 @@ async function handleDropConfirm() {
     />
 
     <div v-else class="space-y-4">
-      <Card v-for="e in enrollments" :key="e.id">
+      <Card v-for="(e, index) in enrollments" :key="e.id" class="stagger-item" :style="{ 'animation-delay': `${index * 0.05}s` }">
         <CardContent class="p-5">
           <div class="flex items-start justify-between">
             <div class="flex-1">

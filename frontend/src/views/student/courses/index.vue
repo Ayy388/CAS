@@ -95,9 +95,10 @@ onMounted(loadData)
 
     <div v-else class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <Card
-        v-for="course in filteredCourses"
+        v-for="(course, index) in filteredCourses"
         :key="course.id"
-        class="card-hover cursor-pointer"
+        class="stagger-item card-hover cursor-pointer"
+        :style="{ 'animation-delay': `${index * 0.05}s` }"
         @click="viewDetail(course.id)"
       >
         <CardContent class="p-5">

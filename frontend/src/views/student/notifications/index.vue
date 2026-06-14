@@ -69,12 +69,12 @@ async function handleMarkRead(id: number) {
     />
 
     <div v-else class="space-y-3">
-      <NotificationItem
-        v-for="n in notifications"
-        :key="n.id"
-        :notification="n"
-        @mark-read="handleMarkRead"
-      />
+      <div v-for="(n, index) in notifications" :key="n.id" class="stagger-item" :style="{ 'animation-delay': `${index * 0.05}s` }">
+        <NotificationItem
+          :notification="n"
+          @mark-read="handleMarkRead"
+        />
+      </div>
     </div>
   </div>
 </template>
