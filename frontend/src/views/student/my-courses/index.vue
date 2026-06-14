@@ -53,7 +53,7 @@ async function handleDrop(enrollmentId: number) {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">我的课程</h1>
+      <h1 class="text-2xl font-bold text-[#1A1A2E]">我的课程</h1>
       <p class="mt-1 text-sm text-[#6B7280]">查看已选课程及其审核状态</p>
     </div>
 
@@ -72,7 +72,7 @@ async function handleDrop(enrollmentId: number) {
           <div class="flex items-start justify-between">
             <div class="flex-1">
               <div class="mb-2 flex items-center gap-2">
-                <h3 class="text-base font-semibold text-[#111827]">{{ e.offeringName }}</h3>
+                <h3 class="text-base font-semibold text-[#1A1A2E]">{{ e.offeringName }}</h3>
                 <StatusBadge :status="e.status" type="enrollment" />
               </div>
               <div class="flex flex-wrap gap-4 text-sm text-[#6B7280]">

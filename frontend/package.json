@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/outfit": "^5.2.8",
     "@tanstack/vue-query": "^5.101.0",
     "axios": "^1.17.0",
     "class-variance-authority": "^0.7.1",

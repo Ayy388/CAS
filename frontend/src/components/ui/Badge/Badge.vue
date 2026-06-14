@@ -10,8 +10,8 @@ const props = withDefaults(defineProps<{
 })
 
 const variants: Record<string, string> = {
-  default: 'border-transparent bg-[#EFF6FF] text-[#2563EB] hover:bg-[#DBEAFE]',
-  secondary: 'border-transparent bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]',
+  default: 'border-transparent bg-[#F0FDFA] text-[#0D9488] hover:bg-[#CCFBF1]',
+  secondary: 'border-transparent bg-[#F3F0EB] text-[#6B7280] hover:bg-[#E5E0D8]',
   destructive: 'border-transparent bg-[#FEF2F2] text-[#EF4444] hover:bg-[#FEE2E2]',
   outline: 'text-[#6B7280]',
 }

@@ -25,8 +25,8 @@ const colorMap: Record<string, string> = {
 
 <template>
   <div
-    class="flex items-start gap-4 rounded-lg border border-[#E5E7EB] p-4 transition-colors"
-    :class="!notification.read ? 'bg-[#F9FAFB]' : 'bg-white'"
+    class="flex items-start gap-4 rounded-2xl border border-[#E5E0D8] p-4 transition-all duration-200"
+    :class="!notification.read ? 'bg-[#F3F0EB]' : 'bg-white/80'"
   >
     <component
       :is="iconMap[notification.type] ?? Info"
@@ -34,10 +34,10 @@ const colorMap: Record<string, string> = {
     />
     <div class="flex-1">
       <div class="flex items-center justify-between">
-        <p class="text-sm font-medium text-[#111827]">{{ notification.title }}</p>
+        <p class="text-sm font-medium text-[#1A1A2E]">{{ notification.title }}</p>
         <button
           v-if="!notification.read"
-          class="text-xs text-[#2563EB] hover:underline"
+          class="text-xs font-medium text-[#0D9488] hover:text-[#0F766E] transition-colors"
           @click="emit('markRead', notification.id)"
         >
           标为已读

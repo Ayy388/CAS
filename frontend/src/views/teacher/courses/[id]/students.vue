@@ -43,11 +43,11 @@ function handleExport() {
   <div class="space-y-6">
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-4">
-        <button class="text-[#6B7280] hover:text-[#111827]" @click="router.back()">
+        <button class="text-[#6B7280] hover:text-[#1A1A2E]" @click="router.back()">
           <ArrowLeft class="h-5 w-5" />
         </button>
         <div>
-          <h1 class="text-2xl font-bold text-[#111827]">{{ courseName || '学生名单' }}</h1>
+          <h1 class="text-2xl font-bold text-[#1A1A2E]">{{ courseName || '学生名单' }}</h1>
           <p class="mt-1 text-sm text-[#6B7280]">已报名学生列表</p>
         </div>
       </div>

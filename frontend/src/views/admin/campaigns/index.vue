@@ -60,7 +60,7 @@ async function handleEnd(id: number) {
   <div class="space-y-6">
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-2xl font-bold text-[#111827]">选课活动管理</h1>
+        <h1 class="text-2xl font-bold text-[#1A1A2E]">选课活动管理</h1>
         <p class="mt-1 text-sm text-[#6B7280]">管理选课活动的创建与状态</p>
       </div>
       <Button @click="showSheet = true">

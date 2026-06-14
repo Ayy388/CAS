@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <div v-if="variant === 'card'" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    <div v-for="i in count" :key="i" class="rounded-xl border border-[#E5E7EB] bg-white p-5">
+    <div v-for="i in count" :key="i" class="rounded-2xl border border-[#E5E0D8] bg-white/80 p-5">
       <Skeleton class="mb-3 h-5 w-3/4" />
       <Skeleton class="mb-2 h-4 w-1/2" />
       <Skeleton class="mb-4 h-4 w-2/3" />

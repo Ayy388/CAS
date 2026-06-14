@@ -74,7 +74,7 @@ async function confirmAction() {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">开课审核</h1>
+      <h1 class="text-2xl font-bold text-[#1A1A2E]">开课审核</h1>
       <p class="mt-1 text-sm text-[#6B7280]">审批开课申请，决定是否开课</p>
     </div>
 

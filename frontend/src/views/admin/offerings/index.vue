@@ -59,7 +59,7 @@ function handleCreate() {
   <div class="space-y-6">
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-2xl font-bold text-[#111827]">开课管理</h1>
+        <h1 class="text-2xl font-bold text-[#1A1A2E]">开课管理</h1>
         <p class="mt-1 text-sm text-[#6B7280]">管理课程的开课配置</p>
       </div>
       <Button @click="handleCreate">
@@ -81,15 +81,15 @@ function handleCreate() {
             title="暂无课程"
             description="请先在课程管理中创建课程"
           />
-          <div v-else class="divide-y divide-[#E5E7EB]">
+          <div v-else class="divide-y divide-[#E5E0D8]">
             <button
               v-for="c in courses"
               :key="c.id"
-              class="w-full px-5 py-3 text-left text-sm transition-colors hover:bg-[#F9FAFB]"
-              :class="selectedCourse?.id === c.id ? 'bg-[#EFF6FF]' : ''"
+              class="w-full px-5 py-3 text-left text-sm transition-colors hover:bg-[#F8F6F3]"
+              :class="selectedCourse?.id === c.id ? 'bg-[#F0FDFA]' : ''"
               @click="selectedCourse = c"
             >
-              <p class="font-medium text-[#111827]">{{ c.name }}</p>
+              <p class="font-medium text-[#1A1A2E]">{{ c.name }}</p>
               <p class="mt-0.5 text-xs text-[#6B7280]">{{ c.code }}</p>
             </button>
           </div>
