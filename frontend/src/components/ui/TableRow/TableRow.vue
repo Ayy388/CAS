@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 
 const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 const classes = computed(() => cn(
-  'border-b border-[#E5E7EB] transition-colors hover:bg-[#F9FAFB] data-[state=selected]:bg-[#F3F4F6]',
+  'border-b border-[#E8E8ED] transition-colors hover:bg-[#F5F5F8] data-[state=selected]:bg-[#F5F5F8]',
   props.class,
 ))
 </script>

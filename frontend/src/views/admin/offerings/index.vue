@@ -59,8 +59,8 @@ function handleCreate() {
   <div class="space-y-6">
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-2xl font-bold text-[#111827]">开课管理</h1>
-        <p class="mt-1 text-sm text-[#6B7280]">管理课程的开课配置</p>
+        <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">开课管理</h1>
+        <p class="mt-1 text-sm text-[#6B6B7B]">管理课程的开课配置</p>
       </div>
       <Button @click="handleCreate">
         <Plus class="mr-2 h-4 w-4" />
@@ -70,9 +70,9 @@ function handleCreate() {
 
     <div class="grid gap-6 lg:grid-cols-3">
       <!-- Left: Course List -->
-      <Card class="lg:col-span-1">
+      <Card class="lg:col-span-1 overflow-hidden">
         <CardHeader>
-          <CardTitle class="text-base">课程列表</CardTitle>
+          <CardTitle class="text-base font-semibold tracking-tight">课程列表</CardTitle>
         </CardHeader>
         <CardContent class="p-0">
           <Skeleton v-if="loading" variant="table" :count="5" />
@@ -81,25 +81,25 @@ function handleCreate() {
             title="暂无课程"
             description="请先在课程管理中创建课程"
           />
-          <div v-else class="divide-y divide-[#E5E7EB]">
+          <div v-else class="divide-y divide-[#E8E8ED]">
             <button
               v-for="c in courses"
               :key="c.id"
-              class="w-full px-5 py-3 text-left text-sm transition-colors hover:bg-[#F9FAFB]"
-              :class="selectedCourse?.id === c.id ? 'bg-[#EFF6FF]' : ''"
+              class="w-full px-5 py-3 text-left text-sm transition-all duration-150 hover:bg-[#F5F5F8]"
+              :class="selectedCourse?.id === c.id ? 'bg-[#EFF2FF]' : ''"
               @click="selectedCourse = c"
             >
-              <p class="font-medium text-[#111827]">{{ c.name }}</p>
-              <p class="mt-0.5 text-xs text-[#6B7280]">{{ c.code }}</p>
+              <p class="font-medium text-[#0C0C0D]">{{ c.name }}</p>
+              <p class="mt-0.5 text-xs text-[#6B6B7B]">{{ c.code }}</p>
             </button>
           </div>
         </CardContent>
       </Card>
 
       <!-- Right: Offering Details -->
-      <Card class="lg:col-span-2">
+      <Card class="lg:col-span-2 overflow-hidden">
         <CardHeader>
-          <CardTitle class="text-base">{{ selectedCourse ? `${selectedCourse.name} 的开课记录` : '请选择课程' }}</CardTitle>
+          <CardTitle class="text-base font-semibold tracking-tight">{{ selectedCourse ? `${selectedCourse.name} 的开课记录` : '请选择课程' }}</CardTitle>
         </CardHeader>
         <CardContent class="p-0">
           <EmptyState

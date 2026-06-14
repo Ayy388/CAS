@@ -81,12 +81,12 @@ onUnmounted(() => {
 
     <!-- My Courses -->
     <div>
-      <h2 class="mb-4 text-xl font-semibold text-[#111827]">我的课程</h2>
+      <h2 class="mb-4 text-lg font-semibold tracking-tight text-[#0C0C0D]">我的课程</h2>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Card v-if="!loading" class="card-hover cursor-pointer" @click="router.push('/student/my-courses')">
           <CardContent class="flex flex-col items-center justify-center py-12 text-center">
-            <BookOpen class="mb-3 h-10 w-10 text-[#2563EB]/40" />
-            <p class="text-sm font-medium text-[#6B7280]">查看已选课程</p>
+            <BookOpen class="mb-3 h-10 w-10 text-[#2563EB]/30" />
+            <p class="text-sm font-medium text-[#6B6B7B]">查看已选课程</p>
           </CardContent>
         </Card>
         <Skeleton v-else class="h-40 rounded-xl" />

@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<{
 })
 
 const classes = computed(() => cn(
-  'shrink-0 bg-[#E5E7EB]',
+  'shrink-0 bg-[#E8E8ED]',
   props.orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
   props.class,
 ))

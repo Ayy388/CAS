@@ -14,11 +14,11 @@ const props = withDefaults(defineProps<{
 const base = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0'
 
 const variants: Record<string, string> = {
-  default: 'bg-[#2563EB] text-white shadow-sm hover:bg-[#1D4ED8] active:scale-[0.98]',
+  default: 'bg-[#2563EB] text-white shadow-sm hover:bg-[#1D4ED8] active:scale-[0.98] active:bg-[#1E40AF]',
   destructive: 'bg-[#EF4444] text-white shadow-sm hover:bg-[#DC2626] active:scale-[0.98]',
-  outline: 'border border-[#E5E7EB] bg-white text-[#111827] shadow-sm hover:bg-[#F9FAFB] hover:text-[#111827]',
-  secondary: 'bg-[#F3F4F6] text-[#111827] hover:bg-[#E5E7EB]',
-  ghost: 'text-[#6B7280] hover:bg-[#F3F4F6] hover:text-[#111827]',
+  outline: 'border border-[#E8E8ED] bg-white text-[#0C0C0D] shadow-sm hover:bg-[#F5F5F8] active:scale-[0.98]',
+  secondary: 'bg-[#F5F5F8] text-[#0C0C0D] shadow-sm hover:bg-[#E8E8ED] active:scale-[0.98]',
+  ghost: 'text-[#6B6B7B] hover:bg-[#F5F5F8] hover:text-[#0C0C0D] active:scale-[0.98]',
   link: 'text-[#2563EB] underline-offset-4 hover:underline',
 }
 

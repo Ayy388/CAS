@@ -61,7 +61,7 @@ async function handleEnroll() {
 
 <template>
   <div>
-    <button class="mb-6 flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#111827]" @click="router.back()">
+    <button class="mb-6 flex items-center gap-2 text-sm text-[#6B6B7B] transition-all duration-150 hover:text-[#0C0C0D]" @click="router.back()">
       <ArrowLeft class="h-4 w-4" />
       返回课程大厅
     </button>
@@ -73,62 +73,62 @@ async function handleEnroll() {
       <div class="space-y-6 lg:col-span-2">
         <div>
           <div class="mb-2 flex items-center gap-3">
-            <h1 class="text-2xl font-bold text-[#111827]">{{ offering.courseName }}</h1>
+            <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">{{ offering.courseName }}</h1>
             <StatusBadge :status="offering.status" type="offering" />
           </div>
-          <p class="text-sm text-[#6B7280]">{{ offering.teacherName }} · {{ offering.credits }}学分 · {{ offering.hours }}课时</p>
+          <p class="text-sm text-[#6B6B7B]">{{ offering.teacherName }} · {{ offering.credits }}学分 · {{ offering.hours }}课时</p>
         </div>
 
         <Separator />
 
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <div class="rounded-lg bg-[#F9FAFB] p-3">
-            <p class="text-xs text-[#6B7280]">上课地点</p>
-            <p class="mt-1 text-sm font-medium text-[#111827]">{{ offering.location || '待定' }}</p>
+          <div class="rounded-xl bg-[#F5F5F8] p-3">
+            <p class="text-xs text-[#6B6B7B]">上课地点</p>
+            <p class="mt-1 text-sm font-medium text-[#0C0C0D]">{{ offering.location || '待定' }}</p>
           </div>
-          <div class="rounded-lg bg-[#F9FAFB] p-3">
-            <p class="text-xs text-[#6B7280]">上课时间</p>
-            <p class="mt-1 text-sm font-medium text-[#111827]">{{ offering.schedule || '待定' }}</p>
+          <div class="rounded-xl bg-[#F5F5F8] p-3">
+            <p class="text-xs text-[#6B6B7B]">上课时间</p>
+            <p class="mt-1 text-sm font-medium text-[#0C0C0D]">{{ offering.schedule || '待定' }}</p>
           </div>
-          <div class="rounded-lg bg-[#F9FAFB] p-3">
-            <p class="text-xs text-[#6B7280]">开放年级</p>
-            <p class="mt-1 text-sm font-medium text-[#111827]">{{ offering.openGrade || '全部' }}</p>
+          <div class="rounded-xl bg-[#F5F5F8] p-3">
+            <p class="text-xs text-[#6B6B7B]">开放年级</p>
+            <p class="mt-1 text-sm font-medium text-[#0C0C0D]">{{ offering.openGrade || '全部' }}</p>
           </div>
-          <div class="rounded-lg bg-[#F9FAFB] p-3">
-            <p class="text-xs text-[#6B7280]">开放专业</p>
-            <p class="mt-1 text-sm font-medium text-[#111827]">{{ offering.openMajor || '全部' }}</p>
+          <div class="rounded-xl bg-[#F5F5F8] p-3">
+            <p class="text-xs text-[#6B6B7B]">开放专业</p>
+            <p class="mt-1 text-sm font-medium text-[#0C0C0D]">{{ offering.openMajor || '全部' }}</p>
           </div>
         </div>
 
         <div>
-          <h3 class="mb-2 text-base font-semibold text-[#111827]">课程简介</h3>
-          <p class="text-sm leading-relaxed text-[#6B7280]">{{ offering.description || '暂无简介' }}</p>
+          <h3 class="mb-2 text-base font-semibold tracking-tight text-[#0C0C0D]">课程简介</h3>
+          <p class="text-sm leading-relaxed text-[#6B6B7B]">{{ offering.description || '暂无简介' }}</p>
         </div>
       </div>
 
       <!-- Right: Sticky Sidebar -->
       <div class="lg:col-span-1">
         <div class="sticky top-24 space-y-4">
-          <Card>
+          <Card class="overflow-hidden">
             <CardContent class="p-5">
               <div class="space-y-4">
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-[#6B7280]">总容量</span>
-                  <span class="font-medium text-[#111827]">{{ offering.maxCapacity }}</span>
+                  <span class="text-[#6B6B7B]">总容量</span>
+                  <span class="font-medium text-[#0C0C0D]">{{ offering.maxCapacity }}</span>
                 </div>
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-[#6B7280]">已报名</span>
-                  <span class="font-medium text-[#111827]">{{ offering.enrolledCount }}</span>
+                  <span class="text-[#6B6B7B]">已报名</span>
+                  <span class="font-medium text-[#0C0C0D]">{{ offering.enrolledCount }}</span>
                 </div>
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-[#6B7280]">剩余席位</span>
-                  <span class="font-medium" :class="offering.seatsRemaining > 0 ? 'text-[#22C55E]' : 'text-[#EF4444]'">
+                  <span class="text-[#6B6B7B]">剩余席位</span>
+                  <span class="font-medium" :class="offering.seatsRemaining > 0 ? 'text-[#22C55E] font-semibold' : 'text-[#EF4444]'">
                     {{ offering.seatsRemaining }}
                   </span>
                 </div>
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-[#6B7280]">最低开课人数</span>
-                  <span class="font-medium text-[#111827]">{{ offering.minEnrollment }}</span>
+                  <span class="text-[#6B6B7B]">最低开课人数</span>
+                  <span class="font-medium text-[#0C0C0D]">{{ offering.minEnrollment }}</span>
                 </div>
               </div>
               <Separator class="my-4" />
@@ -145,7 +145,7 @@ async function handleEnroll() {
       </div>
     </div>
 
-    <div v-else class="py-16 text-center text-sm text-[#6B7280]">
+    <div v-else class="py-16 text-center text-sm text-[#6B6B7B]">
       课程不存在
     </div>
   </div>

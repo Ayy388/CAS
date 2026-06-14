@@ -43,15 +43,15 @@ const countdownText = computed(() => {
   <Card :class="props.class">
     <CardContent class="p-5">
       <div class="flex items-start gap-4">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#EFF6FF]">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#EFF2FF]">
           <Clock class="h-6 w-6 text-[#2563EB]" />
         </div>
         <div class="flex-1">
-          <p class="text-sm font-medium text-[#6B7280]">{{ campaignName }}</p>
-          <p class="mt-1 font-mono text-2xl font-bold tracking-wider text-[#111827]">
+          <p class="text-sm font-medium text-[#6B6B7B]">{{ campaignName }}</p>
+          <p class="mt-1 font-mono text-2xl font-bold tracking-tight text-[#0C0C0D]">
             {{ status === 'ACTIVE' ? '进行中' : statusLabel }}
           </p>
-          <p v-if="countdownText" class="mt-1 text-sm text-[#2563EB]">
+          <p v-if="countdownText" class="mt-1 text-sm font-medium text-[#2563EB]">
             {{ countdownText }}
           </p>
         </div>

@@ -25,26 +25,26 @@ const colorMap: Record<string, string> = {
 
 <template>
   <div
-    class="flex items-start gap-4 rounded-lg border border-[#E5E7EB] p-4 transition-colors"
-    :class="!notification.read ? 'bg-[#F9FAFB]' : 'bg-white'"
+    class="flex items-start gap-4 rounded-xl border border-[#E8E8ED] p-4 transition-all duration-150"
+    :class="!notification.read ? 'bg-[#F5F5F8]' : 'bg-white'"
   >
     <component
       :is="iconMap[notification.type] ?? Info"
-      :class="['mt-0.5 h-5 w-5', colorMap[notification.type] ?? 'text-[#6B7280]']"
+      :class="['mt-0.5 h-5 w-5', colorMap[notification.type] ?? 'text-[#6B6B7B]']"
     />
     <div class="flex-1">
       <div class="flex items-center justify-between">
-        <p class="text-sm font-medium text-[#111827]">{{ notification.title }}</p>
+        <p class="text-sm font-medium text-[#0C0C0D]">{{ notification.title }}</p>
         <button
           v-if="!notification.read"
-          class="text-xs text-[#2563EB] hover:underline"
+          class="text-xs font-medium text-[#2563EB] transition-colors hover:text-[#1D4ED8]"
           @click="emit('markRead', notification.id)"
         >
           标为已读
         </button>
       </div>
-      <p class="mt-1 text-sm text-[#6B7280]">{{ notification.content }}</p>
-      <p class="mt-1 text-xs text-[#9CA3AF]">{{ notification.createdAt }}</p>
+      <p class="mt-1 text-sm text-[#6B6B7B]">{{ notification.content }}</p>
+      <p class="mt-1 text-xs text-[#9C9CAB]">{{ notification.createdAt }}</p>
     </div>
   </div>
 </template>

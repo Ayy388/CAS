@@ -53,8 +53,8 @@ async function handleDrop(enrollmentId: number) {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">我的课程</h1>
-      <p class="mt-1 text-sm text-[#6B7280]">查看已选课程及其审核状态</p>
+      <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">我的课程</h1>
+      <p class="mt-1 text-sm text-[#6B6B7B]">查看已选课程及其审核状态</p>
     </div>
 
     <Skeleton v-if="loading" variant="card" :count="3" />
@@ -67,15 +67,15 @@ async function handleDrop(enrollmentId: number) {
     />
 
     <div v-else class="space-y-4">
-      <Card v-for="e in enrollments" :key="e.id">
+      <Card v-for="e in enrollments" :key="e.id" class="overflow-hidden">
         <CardContent class="p-5">
           <div class="flex items-start justify-between">
             <div class="flex-1">
               <div class="mb-2 flex items-center gap-2">
-                <h3 class="text-base font-semibold text-[#111827]">{{ e.offeringName }}</h3>
+                <h3 class="text-base font-semibold tracking-tight text-[#0C0C0D]">{{ e.offeringName }}</h3>
                 <StatusBadge :status="e.status" type="enrollment" />
               </div>
-              <div class="flex flex-wrap gap-4 text-sm text-[#6B7280]">
+              <div class="flex flex-wrap gap-4 text-sm text-[#6B6B7B]">
                 <span class="flex items-center gap-1">
                   <BookOpen class="h-3.5 w-3.5" />
                   {{ e.teacherName || '未知教师' }}
@@ -89,7 +89,7 @@ async function handleDrop(enrollmentId: number) {
                   {{ e.location || '待定' }}
                 </span>
               </div>
-              <p class="mt-2 text-xs text-[#9CA3AF]">报名时间：{{ e.enrolledAt }}</p>
+              <p class="mt-2 text-xs text-[#9C9CAB]">报名时间：{{ e.enrolledAt }}</p>
             </div>
             <Button
               variant="outline"

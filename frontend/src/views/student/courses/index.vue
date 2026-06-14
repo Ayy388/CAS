@@ -60,14 +60,14 @@ function viewDetail(id: number) {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">课程大厅</h1>
-      <p class="mt-1 text-sm text-[#6B7280]">浏览可选课程，选择你感兴趣的课程</p>
+      <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">课程大厅</h1>
+      <p class="mt-1 text-sm text-[#6B6B7B]">浏览可选课程，选择你感兴趣的课程</p>
     </div>
 
     <!-- Search & Filter -->
     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="relative w-full sm:max-w-xs">
-        <Search class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#9CA3AF]" />
+        <Search class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#9C9CAB]" />
         <Input v-model="searchQuery" placeholder="搜索课程名称或教师..." class="pl-10" />
       </div>
       <Tabs v-model="typeFilter" :tabs="courseTypes" />
@@ -88,22 +88,22 @@ function viewDetail(id: number) {
       <Card
         v-for="course in filteredCourses"
         :key="course.id"
-        class="card-hover cursor-pointer"
+        class="card-hover cursor-pointer overflow-hidden"
         @click="viewDetail(course.id)"
       >
         <CardContent class="p-5">
           <div class="mb-3 flex items-start justify-between">
-            <h3 class="text-base font-semibold text-[#111827]">{{ course.courseName }}</h3>
+            <h3 class="text-base font-semibold tracking-tight text-[#0C0C0D]">{{ course.courseName }}</h3>
             <Badge :variant="course.seatsRemaining > 0 ? 'default' : 'destructive'">
               {{ course.seatsRemaining > 0 ? '可报名' : '已满员' }}
             </Badge>
           </div>
-          <div class="mb-3 space-y-1 text-sm text-[#6B7280]">
+          <div class="mb-3 space-y-1 text-sm text-[#6B6B7B]">
             <p>{{ COURSE_TYPE_MAP[course.courseType] }} · {{ course.teacherName }} · {{ course.credits }}学分 · {{ course.hours }}课时</p>
           </div>
-          <div class="flex items-center justify-between border-t border-[#E5E7EB] pt-3 text-sm">
-            <div class="flex items-center gap-1 text-[#6B7280]">
-              <Users class="h-4 w-4" />
+          <div class="flex items-center justify-between pt-3 text-sm">
+            <div class="flex items-center gap-1.5 text-[#6B6B7B]">
+              <Users class="h-3.5 w-3.5" />
               <span>剩余 {{ course.seatsRemaining }}/{{ course.maxCapacity }} 名额</span>
             </div>
             <Button size="sm" :disabled="course.seatsRemaining <= 0" @click.stop="viewDetail(course.id)">

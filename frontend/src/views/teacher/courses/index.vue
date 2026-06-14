@@ -32,8 +32,8 @@ onMounted(async () => {
 <template>
   <div class="space-y-6">
     <div>
-      <h1 class="text-2xl font-bold text-[#111827]">我的课程</h1>
-      <p class="mt-1 text-sm text-[#6B7280]">查看您负责的课程及报名情况</p>
+      <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">我的课程</h1>
+      <p class="mt-1 text-sm text-[#6B6B7B]">查看您负责的课程及报名情况</p>
     </div>
 
     <Skeleton v-if="loading" variant="card" :count="4" />
@@ -45,13 +45,13 @@ onMounted(async () => {
     />
 
     <div v-else class="grid gap-6 sm:grid-cols-2">
-      <Card v-for="c in courses" :key="c.id" class="card-hover">
+      <Card v-for="c in courses" :key="c.id" class="card-hover overflow-hidden">
         <CardContent class="p-5">
           <div class="mb-3 flex items-start justify-between">
-            <h3 class="text-base font-semibold text-[#111827]">{{ c.courseName }}</h3>
+            <h3 class="text-base font-semibold tracking-tight text-[#0C0C0D]">{{ c.courseName }}</h3>
             <StatusBadge :status="c.status" type="offering" />
           </div>
-          <div class="mb-4 space-y-1 text-sm text-[#6B7280]">
+          <div class="mb-4 space-y-1 text-sm text-[#6B6B7B]">
             <p>学期：{{ c.semesterName }}</p>
             <p class="flex items-center gap-1">
               <Users class="h-3.5 w-3.5" />

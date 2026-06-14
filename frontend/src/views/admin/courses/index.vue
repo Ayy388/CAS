@@ -79,8 +79,8 @@ async function handleDeleteConfirm() {
   <div class="space-y-6">
     <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-2xl font-bold text-[#111827]">课程管理</h1>
-        <p class="mt-1 text-sm text-[#6B7280]">管理系统中的课程信息</p>
+        <h1 class="text-2xl font-bold tracking-tight text-[#0C0C0D]">课程管理</h1>
+        <p class="mt-1 text-sm text-[#6B6B7B]">管理系统中的课程信息</p>
       </div>
       <Button @click="handleCreate">
         <Plus class="mr-2 h-4 w-4" />

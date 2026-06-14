@@ -15,9 +15,9 @@ defineProps<Props>()
 
 <template>
   <div class="flex flex-col items-center justify-center py-16 text-center">
-    <component :is="icon ?? Inbox" class="mb-4 h-12 w-12 text-[#D1D5DB]" />
-    <p class="text-base font-medium text-[#6B7280]">{{ title }}</p>
-    <p v-if="description" class="mt-1 text-sm text-[#9CA3AF]">{{ description }}</p>
+    <component :is="icon ?? Inbox" class="mb-4 h-12 w-12 text-[#D1D1D9]" />
+    <p class="text-base font-medium text-[#6B6B7B]">{{ title }}</p>
+    <p v-if="description" class="mt-1 text-sm text-[#9C9CAB]">{{ description }}</p>
     <button
       v-if="action"
       class="mt-4 text-sm font-medium text-[#2563EB] hover:underline"

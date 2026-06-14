@@ -10,10 +10,10 @@ const props = withDefaults(defineProps<{
 })
 
 const variants: Record<string, string> = {
-  default: 'border-transparent bg-[#EFF6FF] text-[#2563EB] hover:bg-[#DBEAFE]',
-  secondary: 'border-transparent bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]',
+  default: 'border-transparent bg-[#EFF2FF] text-[#2563EB] hover:bg-[#DBEAFE]',
+  secondary: 'border-transparent bg-[#F5F5F8] text-[#6B6B7B] hover:bg-[#E8E8ED]',
   destructive: 'border-transparent bg-[#FEF2F2] text-[#EF4444] hover:bg-[#FEE2E2]',
-  outline: 'text-[#6B7280]',
+  outline: 'text-[#6B6B7B]',
 }
 
 const classes = computed(() => cn(
